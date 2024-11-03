@@ -11,8 +11,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="css/main.css">
+
 </head>
+
 
 <header>
 
@@ -24,14 +26,14 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center">
                 <div class="flex items-center">
-                    <div class="text-2xl font-bold gradient-text">BLacklemur</div>
+                    <img src="Assets/images/Main Logo_Main 1.png" alt="logo" height="200px" width="200px" >
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-indigo-600 transition-colors">Home</a>
-                    <a href="about us.html" class="text-gray-700 hover:text-indigo-600 transition-colors">Who We Are</a>
-                    <a href="services.html" class="text-gray-700 hover:text-indigo-600 transition-colors">What We Do</a>
-                    <a href="portfolio.html" class="text-gray-700 hover:text-indigo-600 transition-colors">Our Work</a>
-                    <a href="#" class="px-6 py-3 text-white bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full hover:shadow-lg transition duration-300 transform hover:-translate-y-0.5">
+                    <a href="index.html" class="text-indigo-800 hover:text-indigo-600 transition-colors">Home</a>
+                    <a href="about us.html" class="text-indigo-800 hover:text-indigo-600 transition-colors">Who We Are</a>
+                    <a href="services.html" class="text-indigo-800 hover:text-indigo-600 transition-colors">What We Do</a>
+                    <a href="portfolio.html" class="text-indigo-800 hover:text-indigo-600 transition-colors">Our Work</a>
+                    <a href="contact.html" class="px-6 py-3 text-white bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full hover:shadow-lg transition duration-300 transform hover:-translate-y-0.5">
                         Contact Us
                     </a>
                 </div>
@@ -48,7 +50,7 @@
                     <a href="about us.html" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 transition-colors">Who We Are</a>
                     <a href="services.html" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 transition-colors">What We Do</a>
                     <a href="portfolio.html" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 transition-colors">Our Work</a>
-                    <a href="#" class="block px-3 py-2 text-white bg-gradient-to-r from-indigo-600 to-purple-600 rounded-md">Contact Us</a>
+                    <a href="contact.html" class="block px-3 py-2 text-white bg-gradient-to-r from-indigo-600 to-purple-600 rounded-md">Contact Us</a>
                 </div>
             </div>
         </div>
@@ -70,11 +72,11 @@
             .scale-hover:hover { transform: scale(1.05); }
         </style>
 
-    <body class="bg-slate-150 text-indigo-600 dark:bg-gray-50 dark:text:white font-sans leading-relaxed tracking-wide">
+    <body class="bg-slate-100 text-violet-800 dark:bg-gradient-to-tr from-indigo-800 to-violet-600  dark:text:white ">
     
     <!-- Hero Section -->
     <section class="relative bg-cover bg-center h-screen" style="background-image: url('Assets/images/service.jpg');">
-        <div class="absolute inset-0 bg-indigo-800 opacity-60"></div>
+        <div class="absolute inset-0 bg-indigo-800 opacity-70"></div>
         <div class="relative flex items-center justify-center h-full text-center text-white fade-in">
             <div class="space-y-6 slide-up ">
                 <h1 class="text-4xl md:text-5xl font-bold hover:scale-125">Our Services</h1>
@@ -84,67 +86,76 @@
     </section>
     
     <!-- Services Section -->
-    <section class="py-16 bg-white">
+    <section class="py-16 bg-white w-fit">
         <div class="max-w-6xl mx-auto px-6 lg:px-8">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-8 fade-in">What We Offer</h2>
     
             <!-- Service 1: Brand Design -->
-            <div class="grid md:grid-cols-2 gap-8 items-center mb-12 bg-slate-200">
+            <div class="grid md:grid-cols-2 gap-8 items-center mb-12 bg-gradient-to-tr from-indigo-800 to-violet-600 text-white">
                 <div class="fade-in">
-                    <img src="Assets/images/hero1" alt="Brand Design" class="w-full rounded-lg shadow-lg scale-hover transition duration-300">
+                    <img src="Assets/images/services/Brand Design.png" alt="Brand Design" class="w-full rounded-lg shadow-lg scale-hover transition duration-300">
                 </div>
                 <div class="space-y-4 slide-up">
-                    <h3 class="text-2xl font-semibold text-gray-800">Brand Design</h3>
-                    <p class="text-gray-600">Crafting unique brand identities that make a lasting impression. Our team delivers impactful, cohesive branding to help you stand out in the market.</p>
-                    <button class="px-6 py-2 mt-4 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition duration-300">Get a Quote</button>
+                    <h3 class="text-2xl font-semibold text-white">Brand Design and Development</h3>
+                    <p class="text-white">Our focus is on Crafting unique brand identities that make a lasting impression. Therefore Our team delivers impactful, cohesive branding to help you stand out in the market.</p>
+                    <a href="https://wa.me/message/Z6LNRPLPU7ERO1" target="_blank">
+                    <button class="px-6 py-2 mt-4 bg-slate-100 text-violet-800 rounded-md hover:bg-orange-500 hover:text-white transition duration-300">Get a Quote</button>
+                </a>
                 </div>
             </div>
     
             <!-- Service 2: Web Design -->
             <div class="grid md:grid-cols-2 gap-8 items-center mb-12">
                 <div class="order-2 md:order-1 space-y-4 slide-up">
-                    <h3 class="text-2xl font-semibold text-gray-800">Web Design</h3>
-                    <p class="text-gray-600">Building responsive and engaging websites that reflect your brand and captivate audiences. We prioritize user experience and creativity in every design.</p>
-                    <button class="px-6 py-2 mt-4 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition duration-300">Get a Quote</button>
+                    <h3 class="text-2xl font-semibold text-gray-800">Website Design and Development</h3>
+                    <p class="text-gray-600">Tired of mediocre websites that does not bring in results, We build  responsive and engaging websites that reflect your brand and captivate audiences. We prioritize user experience and creativity in every design.</p>
+                    <a href="https://wa.me/message/Z6LNRPLPU7ERO1" target="_blank">
+                    <button class="px-6 py-2 mt-4 bg-gradient-to-tr from-indigo-800 to-violet-600 text-white rounded-md hover:bg-indigo-700 transition duration-300">Get a Quote</button>
+                </a>
                 </div>
                 <div class="fade-in order-1 md:order-2">
-                    <img src="Assets/images/hero1" alt="Web Design" class="w-full rounded-lg shadow-lg scale-hover transition duration-300">
+                    <img src="Assets/images/services/web design.png" alt="Web Design" class="w-full rounded-lg shadow-lg scale-hover transition duration-300">
                 </div>
             </div>
     
             <!-- Service 3: Digital Marketing -->
-            <div class="grid md:grid-cols-2 gap-8 items-center mb-12 bg-slate-200">
+            <div class="grid md:grid-cols-2 gap-8 items-center mb-12  bg-gradient-to-tr from-indigo-800 to-violet-600 text-white">
                 <div class="fade-in">
-                    <img src="Assets/images/hero1" alt="Digital Marketing" class="w-full rounded-lg shadow-lg scale-hover transition duration-300">
+                    <img src="Assets/images/services/Digital Marketing.png" alt="Digital Marketing" class="w-full rounded-lg shadow-lg scale-hover transition duration-300">
                 </div>
                 <div class="space-y-4 slide-up">
-                    <h3 class="text-2xl font-semibold text-gray-800">Digital Marketing</h3>
-                    <p class="text-gray-600">Boosting your online presence with tailored marketing strategies that drive growth. From social media to SEO, we make sure your brand gets noticed.</p>
-                    <button class="px-6 py-2 mt-4 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition duration-300">Get a Quote</button>
+                    <h3 class="text-2xl font-semibold text-white">Digital Marketing Strategies and Solutions</h3>
+                    <p class="text-white">We can help boost your online presence with tailored marketing strategies that drive growth. From social media to SEO, we make sure your brand gets noticed in the market.</p>
+                    <a href="https://wa.me/message/Z6LNRPLPU7ERO1" target="_blank">
+                        <button class="px-6 py-2 mt-4 bg-slate-100 text-violet-800 rounded-md hover:bg-orange-500 hover:text-white transition duration-300">Get a Quote</button>
+                    </a>
                 </div>
             </div>
     
             <!-- Service 4: Application Development -->
             <div class="grid md:grid-cols-2 gap-8 items-center mb-12">
                 <div class="order-2 md:order-1 space-y-4 slide-up">
-                    <h3 class="text-2xl font-semibold text-gray-800">Application Development</h3>
-                    <p class="text-gray-600">Developing reliable, scalable applications tailored to your business needs. From concept to launch, we ensure every app meets our high standards.</p>
-                    <button class="px-6 py-2 mt-4 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition duration-300">Get a Quote</button>
+                    <h3 class="text-2xl font-semibold text-gray-800">Application Design and Development</h3>
+                    <p class="text-gray-600">As an innovation company we Develope reliable, scalable applications tailored to your business needs. From concept to launch, we ensure every app meets our high standards.</p>
+                    <a href="https://wa.me/message/Z6LNRPLPU7ERO1" target="_blank">
+                    <button class="px-6 py-2 mt-4 bg-gradient-to-tr from-indigo-800 to-violet-600 text-white rounded-md hover:bg-indigo-700 transition duration-300">Get a Quote</button>
+                </a>
                 </div>
                 <div class="fade-in order-1 md:order-2">
-                    <img src="Assets/images/hero1" alt="Application Development" class="w-full rounded-lg shadow-lg scale-hover transition duration-300">
+                    <img src="Assets/images/services/App design.png" alt="Application Development" class="w-full rounded-lg shadow-lg scale-hover transition duration-300">
                 </div>
             </div>
     
             <!-- Service 5: UI/UX Design -->
-            <div class="grid md:grid-cols-2 gap-8 items-center mb-12 bg-slate-200">
+            <div class="grid md:grid-cols-2 gap-8 items-center mb-12  bg-gradient-to-tr from-indigo-800 to-violet-600 text-white">
                 <div class="fade-in">
-                    <img src="Assets/images/hero1" alt="UI/UX Design" class="w-full rounded-lg shadow-lg scale-hover transition duration-300">
+                    <img src="Assets/images/services/UIUX Design.png" alt="UI/UX Design" class="w-full rounded-lg shadow-lg scale-hover transition duration-300">
                 </div>
                 <div class="space-y-4 slide-up">
-                    <h3 class="text-2xl font-semibold text-gray-800">UI/UX Design</h3>
-                    <p class="text-gray-600">Designing intuitive and beautiful interfaces that improve user experience. We ensure that every touchpoint leaves a positive impression on your users.</p>
-                    <button class="px-6 py-2 mt-4 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition duration-300">Get a Quote</button>
+                    <h3 class="text-2xl font-semibold text-white">UI/UX Design</h3>
+                    <p class="text-white">As an innovation company, we design intuitive and beautiful interfaces that improve user experience. We ensure that every touchpoint leaves a positive impression on your users.</p>
+                    <a href="https://wa.me/message/Z6LNRPLPU7ERO1" target="_blank">
+                        <button class="px-6 py-2 mt-4 bg-slate-100 text-violet-800 rounded-md hover:bg-orange-500 hover:text-white transition duration-300">Get a Quote</button>
+                    </a>
                 </div>
             </div>
     
@@ -152,11 +163,13 @@
             <div class="grid md:grid-cols-2 gap-8 items-center">
                 <div class="order-2 md:order-1 space-y-4 slide-up">
                     <h3 class="text-2xl font-semibold text-gray-800">Data Solutions</h3>
-                    <p class="text-gray-600">Transforming data into actionable insights that drive strategic decisions. We provide data solutions that empower you to make informed choices.</p>
-                    <button class="px-6 py-2 mt-4 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition duration-300">Get a Quote</button>
+                    <p class="text-gray-600">We believe in transforming data into actionable insights that drive strategic decisions. We provide data solutions that empower you to make informed choices.</p>
+             <a href="https://wa.me/message/Z6LNRPLPU7ERO1" target="_blank">
+                    <button class="px-6 py-2 mt-4 bg-gradient-to-tr from-indigo-800 to-violet-600 text-white rounded-md hover:bg-orange-500 hover:text-white transition duration-300">Get a Quote</button>
+                </a>
                 </div>
                 <div class="fade-in order-1 md:order-2">
-                    <img src="Assets/images/hero1" alt="Data Solutions" class="w-full rounded-lg shadow-lg scale-hover transition duration-300">
+                    <img src="Assets/images/services/Data Solutions.png" alt="Data Solutions" class="w-full rounded-lg shadow-lg scale-hover transition duration-300">
                 </div>
             </div>
         </div>
@@ -181,59 +194,59 @@
     
     </body>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
-                <div>
-                    <div class="text-2xl font-bold mb-6">BLacklemur</div>
-                    <p class="text-gray-400">Transform your digital presence with innovative solutions and creative excellence.</p>
-                </div>
-                
-                <div>
-                    <h3 class="font-semibold text-lg mb-6">Services</h3>
-                    <ul class="space-y-4 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors">Brand Design</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Web Development</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Digital Marketing</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Data Solutions</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h3 class="font-semibold text-lg mb-6">Company</h3>
-                    <ul class="space-y-4 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Our Work</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h3 class="font-semibold text-lg mb-6">Follow Us</h3>
-                    <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </div>
-                </div>
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div>
+                <div class="text-2xl font-bold mb-6">at BLacklemur Innovations</div>
+                <p class="text-gray-400">Our mission is to empower businesses by providing cutting-edge solutions in brand design, web and application development, marketing strategies, and data solutions.</p>
             </div>
             
-            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-                <p>&copy; 2024 BLacklemur Innovations. All rights reserved.</p>
+            <div>
+                <h3 class="font-semibold text-lg mb-6">Services</h3>
+                <ul class="space-y-4 text-gray-400">
+                    <li><a href="services.html" class="hover:text-white transition-colors">Brand Design</a></li>
+                    <li><a href="services.html" class="hover:text-white transition-colors">Web Development</a></li>
+                    <li><a href="services.html" class="hover:text-white transition-colors">Digital Marketing</a></li>
+                    <li><a href="services.html" class="hover:text-white transition-colors">Data Solutions</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="font-semibold text-lg mb-6">Company</h3>
+                <ul class="space-y-4 text-gray-400">
+                    <li><a href="about us.html" class="hover:text-white transition-colors">About Us</a></li>
+                    <li><a href="portfolio.html" class="hover:text-white transition-colors">Our Work</a></li>
+                    <li><a href="mailto:info@blacklemur.co.zw" class="hover:text-white transition-colors">Careers</a></li>
+                    <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="font-semibold text-lg mb-6">Follow Us</h3>
+                <div class="flex space-x-4">
+                    <a href="https://web.facebook.com/blacklemurinnovation" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://x.com/blacklemurs1" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/theblproject" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/theblproject" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
             </div>
         </div>
-      </footer>
+        
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+            <p>&copy; 2024 BLacklemur Innovations. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
 
     </html>
     

@@ -1,4 +1,8 @@
 
+@import
+url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 @keyframes float {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-20px); }
@@ -7,14 +11,10 @@
 .float-animation {
     animation: float 6s ease-in-out infinite;
 }
-.gradient-text {
-    background: linear-gradient(45deg, #4F46E5, #7C3AED);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
 .portfolio-item:hover .portfolio-overlay {
     opacity: 1;
-    transform: translateY(2);
+    transform: translateY(0);
 }
 .portfolio-overlay {
     transform: translateY(20px);
