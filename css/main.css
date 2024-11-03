@@ -14,7 +14,7 @@
 }
 .portfolio-item:hover .portfolio-overlay {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(2);
 }
 .portfolio-overlay {
     transform: translateY(20px);
