@@ -1,17 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blacklemur Innovations</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.2/alpine.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/main.css">
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta
+name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blacklemur Innovations</title> <script
+src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.2/alpine.js"></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+rel="stylesheet"> <script
+src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"> <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/main.css">
 
 </head>
 
@@ -19,162 +20,160 @@
 <header>
 
     <!-- Navigation -->
-    <nav class="bg-white/90 backdrop-blur-md fixed w-full z-50 shadow-sm transition-all duration-300" 
-         x-data="{ isOpen: false, atTop: true }" 
-         @scroll.window="atTop = (window.pageYOffset > 20) ? false : true"
-         :class="{'py-2': !atTop, 'py-4': atTop}">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center">
-                <div class="flex items-center">
-                    <img src="Assets/images/Main Logo_Main 1.png" alt="logo" height="200px" width="200px" >
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-indigo-800 hover:text-indigo-600 transition-colors">Home</a>
-                    <a href="about us.html" class="text-indigo-800 hover:text-indigo-600 transition-colors">Who We Are</a>
-                    <a href="services.html" class="text-indigo-800 hover:text-indigo-600 transition-colors">What We Do</a>
-                    <a href="portfolio.html" class="text-indigo-800 hover:text-indigo-600 transition-colors">Our Work</a>
-                    <a href="contact.html" class="px-6 py-3 text-white bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full hover:shadow-lg transition duration-300 transform hover:-translate-y-0.5">
-                        Contact Us
-                    </a>
-                </div>
-                <button @click="isOpen = !isOpen" class="md:hidden text-gray-700 focus:outline-none">
-                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
-                    </svg>
-                </button>
-            </div>
+    <nav class="bg-white/90 backdrop-blur-md fixed w-full z-50
+    shadow-sm transition-all duration-300" x-data="{ isOpen: false,
+    atTop: true }" 
+         @scroll.window="atTop = (window.pageYOffset > 20) ? false :
+          true"
+         :class="{'py-2': !atTop, 'py-4': atTop}"> <div
+          class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"> <div
+          class="flex justify-between items-center"> <div class="flex
+          items-center"> <img src="Assets/images/Main Logo_Main
+          1.png" alt="logo" height="200px" width="200px" > </div>
+          <div class="hidden md:flex items-center space-x-8"> <a
+          href="index.html" class="text-indigo-800
+          hover:text-indigo-600 transition-colors">Home</a> <a
+          href="about us.html" class="text-indigo-800
+          hover:text-indigo-600 transition-colors">Who We Are</a> <a
+          href="services.html" class="text-indigo-800
+          hover:text-indigo-600 transition-colors">What We Do</a> <a
+          href="portfolio.html" class="text-indigo-800
+          hover:text-indigo-600 transition-colors">Our Work</a> <a
+          href="contact.html" class="px-6 py-3 text-white
+          bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full
+          hover:shadow-lg transition duration-300 transform
+          hover:-translate-y-0.5"> Contact Us </a> </div>
+          <button @click="isOpen = !isOpen" class="md:hidden
+          text-gray-700 focus:outline-none"> <svg class="h-6 w-6"
+          fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round"
+          stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/> </svg>
+          </button> </div>
             <!-- Mobile menu -->
-            <div class="md:hidden" x-show="isOpen" x-transition>
-                <div class="px-2 pt-2 pb-3 space-y-1">
-                    <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 transition-colors">Home</a>
-                    <a href="about us.html" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 transition-colors">Who We Are</a>
-                    <a href="services.html" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 transition-colors">What We Do</a>
-                    <a href="portfolio.html" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 transition-colors">Our Work</a>
-                    <a href="contact.html" class="block px-3 py-2 text-white bg-gradient-to-r from-indigo-600 to-purple-600 rounded-md">Contact Us</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-    </header>
+            <div class="md:hidden" x-show="isOpen" x-transition> <div
+            class="px-2 pt-2 pb-3 space-y-1"> <a href="index.html"
+            class="block px-3 py-2 text-gray-700
+            hover:text-indigo-600 transition-colors">Home</a> <a
+            href="about us.html" class="block px-3 py-2 text-gray-700
+            hover:text-indigo-600 transition-colors">Who We Are</a>
+            <a href="services.html" class="block px-3 py-2
+            text-gray-700 hover:text-indigo-600
+            transition-colors">What We Do</a> <a
+            href="portfolio.html" class="block px-3 py-2
+            text-gray-700 hover:text-indigo-600
+            transition-colors">Our Work</a> <a href="contact.html"
+            class="block px-3 py-2 text-white bg-gradient-to-r
+            from-indigo-600 to-purple-600 rounded-md">Contact Us</a>
+            </div> </div> </div> </nav> </header>
            
-    <body class="bg-slate-100 text-violet-800 dark:bg-gradient-to-tr from-indigo-800 to-violet-600 dark:text:white ">
+    <body class="bg-slate-100 text-violet-800 dark:bg-gradient-to-tr
+    from-indigo-800 to-violet-600 dark:text:white ">
     
     <style>
         /* Custom Hover and Animation */
-        .hover-shadow:hover {
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
-            transform: scale(1.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-    </style>
+        .hover-shadow:hover { box-shadow: 0 10px 15px rgba(0, 0, 0,
+         0.3); transform: scale(1.05); transition: transform 0.3s
+         ease, box-shadow 0.3s ease; } </style>
 
     <!-- Hero Section -->
-    <section class="relative bg-indigo-800 text-white py-20">
-        <div class="max-w-6xl mx-auto px-6 lg:px-8">
-            <h1 class="text-4xl md:text-5xl font-bold text-center">Get in Touch</h1>
-            <p class="text-lg md:text-xl text-center mt-4">
-                We're here to answer your questions and discuss how we can help your brand thrive.
-            </p>
-        </div>
-    </section>
+    <section class="relative bg-indigo-800 text-white py-20"> <div
+    class="max-w-6xl mx-auto px-6 lg:px-8"> <h1 class="text-4xl
+    md:text-5xl font-bold text-center">Get in Touch</h1> <p
+    class="text-lg md:text-xl text-center mt-4"> We're here to answer
+    your questions and discuss how we can help your brand thrive.
+    </p> </div> </section>
 
     <!-- Contact Details Section -->
-    <section class="py-16 bg-gray-100">
-        <div class="max-w-6xl mx-auto px-6 lg:px-8 grid md:grid-cols-2 gap-8 items-center">
+    <section class="py-16 bg-gray-100"> <div class="max-w-6xl mx-auto
+    px-6 lg:px-8 grid md:grid-cols-2 gap-8 items-center">
             
             <!-- Contact Information -->
-            <div class="space-y-8 text-gray-800">
-                <h2 class="text-3xl font-bold">Contact Details</h2>
-                <p class="text-lg">
-                    Reach out to us via the following channels for inquiries, partnerships, or just to say hello!
-                </p>
-                <div class="space-y-4">
-                    <div class="flex items-center">
-                        <span class="text-indigo-800 font-semibold">📍 Address:</span>
-                        <span class="ml-3">33 Argyle Road, Avondale. Harare, Zimbabwe</span>
-                    </div>
-                    <div class="flex items-center">
-                        <span class="text-indigo-800 font-semibold">📞 Phone:</span>
-                        <span class="ml-3">+263 786 187 218</span>
-                    </div>
-                    <div class="flex items-center">
-                        <span class="text-indigo-800 font-semibold">📧 Email:</span>
-                        <span class="ml-3">info@blacklemur.co.zw</span>
-                    </div>
-                    <div class="flex items-center">
-                        <span class="text-indigo-800 font-semibold">💼 Business Hours:</span>
-                        <span class="ml-3">Mon - Fri, 9:00 AM - 5:00 PM</span>
-                    </div>
-                </div>
-            </div>
+            <div class="space-y-8 text-gray-800"> <h2 class="text-3xl
+            font-bold">Contact Details</h2> <p class="text-lg"> Reach
+            out to us via the following channels for inquiries,
+            partnerships, or just to say hello! </p> <div
+            class="space-y-4"> <div class="flex items-center"> <span
+            class="text-indigo-800 font-semibold">📍 Address:</span>
+            <span class="ml-3">33 Argyle Road, Avondale. Harare,
+            Zimbabwe</span> </div> <div class="flex items-center">
+            <span class="text-indigo-800 font-semibold">📞
+            Phone:</span> <span class="ml-3">+263 786 187 218</span>
+            </div> <div class="flex items-center"> <span
+            class="text-indigo-800 font-semibold">📧 Email:</span>
+            <span class="ml-3">info@blacklemur.co.zw</span> </div>
+            <div class="flex items-center"> <span
+            class="text-indigo-800 font-semibold">💼 Business
+            Hours:</span> <span class="ml-3">Mon - Fri, 9:00 AM -
+            5:00 PM</span> </div> </div> </div>
 
             <!-- Google Maps Embed -->
-            <div class="bg-white rounded-lg shadow-lg hover-shadow p-4">
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Our Location</h2>
-                <div class="w-full h-72 overflow-hidden rounded-lg">
-                    <iframe 
-                        class="w-full h-full rounded-lg"
-                        src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3308.7936998349887!2d18.471937275911486!3d-33.972141624419265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s33%20argyle%20road%20avondale!5e0!3m2!1sen!2sza!4v1730581476599!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+            <div class="bg-white rounded-lg shadow-lg hover-shadow
+            p-4"> <h2 class="text-2xl font-bold text-gray-800
+            mb-4">Our Location</h2> <div class="w-full h-72
+            overflow-hidden rounded-lg"> <iframe class="w-full h-full
+            rounded-lg"
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3308.7936998349887!2d18.471937275911486!3d-33.972141624419265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s33%20argyle%20road%20avondale!5e0!3m2!1sen!2sza!4v1730581476599!5m2!1sen!2sza"
+            width="600" height="450" style="border:0;"
+            allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"> </iframe>
                         
-                </div>
-            </div>
-        </div>
-    </section>
+                </div> </div> </div> </section>
 
 <!-- Footer -->
-<footer class="bg-gray-900 text-white py-12">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
-            <div>
-                <div class="text-2xl font-bold mb-6">at BLacklemur Innovations</div>
-                <p class="text-gray-400">Our mission is to empower businesses by providing cutting-edge solutions in brand design, web and application development, marketing strategies, and data solutions.</p>
-            </div>
+<footer class="bg-gray-900 text-white py-12"> <div class="max-w-7xl
+mx-auto px-4 sm:px-6 lg:px-8"> <div class="grid grid-cols-1
+md:grid-cols-4 gap-12"> <div> <div class="text-2xl font-bold mb-6">at
+BLacklemur Innovations</div> <p class="text-gray-400">Our mission is
+to empower businesses by providing cutting-edge solutions in brand
+design, web and application development, marketing strategies, and
+data solutions.</p> </div>
             
-            <div>
-                <h3 class="font-semibold text-lg mb-6">Services</h3>
-                <ul class="space-y-4 text-gray-400">
-                    <li><a href="services.html" target="_blank" class="hover:text-white transition-colors">Brand Design</a></li>
-                    <li><a href="services.html" target="_blank" class="hover:text-white transition-colors">Web Development</a></li>
-                    <li><a href="services.html" target="_blank" class="hover:text-white transition-colors">Digital Marketing</a></li>
-                    <li><a href="services.html" target="_blank" class="hover:text-white transition-colors">Data Solutions</a></li>
-                </ul>
-            </div>
+            <div> <h3 class="font-semibold text-lg mb-6">Services</h3>
+            <ul class="space-y-4 text-gray-400"> <li><a
+            href="services.html" target="_blank"
+            class="hover:text-white transition-colors">Brand
+            Design</a></li> <li><a href="services.html"
+            target="_blank" class="hover:text-white
+            transition-colors">Web Development</a></li> <li><a
+            href="services.html" target="_blank"
+            class="hover:text-white transition-colors">Digital
+            Marketing</a></li> <li><a href="services.html"
+            target="_blank" class="hover:text-white
+            transition-colors">Data Solutions</a></li> </ul> </div>
             
-            <div>
-                <h3 class="font-semibold text-lg mb-6">Company</h3>
-                <ul class="space-y-4 text-gray-400">
-                    <li><a href="about us.html" class="hover:text-white transition-colors">About Us</a></li>
-                    <li><a href="portfolio.html" class="hover:text-white transition-colors">Our Work</a></li>
-                    <li><a href="mailto:info@blacklemur.co.zw" target="_blank" class="hover:text-white transition-colors">Careers</a></li>
-                    <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
-                </ul>
-            </div>
+            <div> <h3 class="font-semibold text-lg mb-6">Company</h3>
+            <ul class="space-y-4 text-gray-400"> <li><a href="about
+            us.html" class="hover:text-white transition-colors">About
+            Us</a></li> <li><a href="portfolio.html"
+            class="hover:text-white transition-colors">Our
+            Work</a></li> <li><a href="mailto:info@blacklemur.co.zw"
+            target="_blank" class="hover:text-white
+            transition-colors">Careers</a></li> <li><a
+            href="contact.html" class="hover:text-white
+            transition-colors">Contact</a></li> </ul> </div>
             
-            <div>
-                <h3 class="font-semibold text-lg mb-6">Follow Us</h3>
-                <div class="flex space-x-4">
-                    <a href="https://web.facebook.com/blacklemurinnovation" target="_blank" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://x.com/blacklemurs1" target="_blank" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://www.instagram.com/theblproject" target="_blank" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/company/theblproject" target="_blank" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
+            <div> <h3 class="font-semibold text-lg mb-6">Follow
+            Us</h3> <div class="flex space-x-4"> <a
+            href="https://web.facebook.com/blacklemurinnovation"
+            target="_blank" class="w-10 h-10 bg-white/10 rounded-full
+            flex items-center justify-center hover:bg-indigo-600
+            transition-colors"> <i class="fab fa-facebook-f"></i>
+            </a> <a href="https://x.com/blacklemurs1" target="_blank"
+            class="w-10 h-10 bg-white/10 rounded-full flex
+            items-center justify-center hover:bg-indigo-600
+            transition-colors"> <i class="fab fa-twitter"></i> </a>
+            <a href="https://www.instagram.com/theblproject"
+            target="_blank" class="w-10 h-10 bg-white/10 rounded-full
+            flex items-center justify-center hover:bg-indigo-600
+            transition-colors"> <i class="fab fa-instagram"></i> </a>
+            <a href="https://www.linkedin.com/company/theblproject"
+            target="_blank" class="w-10 h-10 bg-white/10 rounded-full
+            flex items-center justify-center hover:bg-indigo-600
+            transition-colors"> <i class="fab fa-linkedin-in"></i>
+            </a> </div> </div> </div>
         
-        <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 BLacklemur Innovations. All rights reserved.</p>
-        </div>
-    </div>
-</footer>
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center
+        text-gray-400"> <p>&copy; 2024 BLacklemur Innovations. All
+        rights reserved.</p> </div> </div> </footer>
 
-</body>
-</html>
+</body> </html>
