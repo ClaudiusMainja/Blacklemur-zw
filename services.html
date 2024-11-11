@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your compelling description here">
     <title>Blacklemur Innovations</title>
+    
+    <!-- Open Graph tags for social sharing -->
+    <meta property="article:author" content="Claudius Mainja- Product and Brand Designer/Web Developer">
+    <meta property="og:title" content="Blacklemur Innovations">
+    <meta property="og:description" content="a Zimbabwe's premier creative agency delivering innovative solutions for forward-thinking brands.">
+    <link rel="icon" type="image/x-icon" href="Assets/images/icon.jpeg">
     <link rel="icon" type="image/x-icon" href="Assets/images/icon.jpeg">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.2/alpine.js"></script>
@@ -20,7 +27,7 @@
 <header>
 
     <!-- Navigation -->
-    <nav class="bg-white/90 backdrop-blur-md fixed w-full z-50 shadow-sm transition-all duration-300" 
+    <nav class="bg-white/90 backdrop-blur-md fixed w-full z-50 shadow-sm transition-all duration-300 montserrat text-lg" 
          x-data="{ isOpen: false, atTop: true }" 
          @scroll.window="atTop = (window.pageYOffset > 20) ? false : true"
          :class="{'py-2': !atTop, 'py-4': atTop}">
@@ -73,14 +80,14 @@
             .scale-hover:hover { transform: scale(1.05); }
         </style>
 
-    <body class="bg-slate-100 text-violet-800 dark:bg-gradient-to-tr from-indigo-800 to-violet-600  dark:text:white ">
+    <body class="bg-slate-100 text-violet-800 dark:bg-gradient-to-tr from-indigo-800 to-violet-600  dark:text:white montserrat text-lg">
     
     <!-- Hero Section -->
     <section class="relative bg-cover bg-center h-screen" style="background-image: url('Assets/images/service.jpg');">
         <div class="absolute inset-0 bg-indigo-800 opacity-70"></div>
         <div class="relative flex items-center justify-center h-full text-center text-white fade-in">
             <div class="space-y-6 slide-up ">
-                <h1 class="text-4xl md:text-5xl font-bold hover:scale-125">Our Services</h1>
+                <h1 class="text-4xl md:text-5xl font-bold hover:scale-125 montserrat-alternates-bold ">Our Services</h1>
                 <p class="text-lg md:text-2xl hover:scale-125">Empowering brands with innovative digital solutions</p>
             </div>
         </div>
@@ -96,7 +103,7 @@
                     <img src="Assets/images/services/Brand Design.png" alt="Brand Design" class="w-full rounded-lg shadow-lg scale-hover transition duration-300">
                 </div>
                 <div class="space-y-4 slide-up">
-                    <h3 class="text-2xl font-semibold text-white">Brand Design and Development</h3>
+                    <h3 class="text-2xl montserrat-alternates-bold  text-white">Brand Design and Development</h3>
                     <p class="text-white">Our focus is on Crafting unique brand identities that make a lasting impression. Therefore Our team delivers impactful, cohesive branding to help you stand out in the market.</p>
                     <a href="https://wa.me/message/Z6LNRPLPU7ERO1" target="_blank">
                     <button class="px-6 py-2 mt-4 bg-slate-100 text-violet-800 rounded-md hover:bg-orange-500 hover:text-white transition duration-300">Get a Quote</button>
@@ -107,7 +114,7 @@
             <!-- Service 2: Web Design -->
             <div class="grid md:grid-cols-2 gap-8 items-center mb-12">
                 <div class="order-2 md:order-1 space-y-4 slide-up">
-                    <h3 class="text-2xl font-semibold text-gray-800">Website Design and Development</h3>
+                    <h3 class="text-2xl montserrat-alternates-bold  text-gray-800">Website Design and Development</h3>
                     <p class="text-gray-600">Tired of mediocre websites that does not bring in results, We build  responsive and engaging websites that reflect your brand and captivate audiences. We prioritize user experience and creativity in every design.</p>
                     <a href="https://wa.me/message/Z6LNRPLPU7ERO1" target="_blank">
                     <button class="px-6 py-2 mt-4 bg-gradient-to-tr from-indigo-800 to-violet-600 text-white rounded-md hover:bg-indigo-700 transition duration-300">Get a Quote</button>
@@ -124,7 +131,7 @@
                     <img src="Assets/images/services/Digital Marketing.png" alt="Digital Marketing" class="w-full rounded-lg shadow-lg scale-hover transition duration-300">
                 </div>
                 <div class="space-y-4 slide-up">
-                    <h3 class="text-2xl font-semibold text-white">Digital Marketing Strategies and Solutions</h3>
+                    <h3 class="text-2xl montserrat-alternates-bold  text-white">Digital Marketing Strategies and Solutions</h3>
                     <p class="text-white">We can help boost your online presence with tailored marketing strategies that drive growth. From social media to SEO, we make sure your brand gets noticed in the market.</p>
                     <a href="https://wa.me/message/Z6LNRPLPU7ERO1" target="_blank">
                         <button class="px-6 py-2 mt-4 bg-slate-100 text-violet-800 rounded-md hover:bg-orange-500 hover:text-white transition duration-300">Get a Quote</button>
@@ -135,7 +142,7 @@
             <!-- Service 4: Application Development -->
             <div class="grid md:grid-cols-2 gap-8 items-center mb-12">
                 <div class="order-2 md:order-1 space-y-4 slide-up">
-                    <h3 class="text-2xl font-semibold text-gray-800">Application Design and Development</h3>
+                    <h3 class="text-2xl montserrat-alternates-bold  text-gray-800">Application Design and Development</h3>
                     <p class="text-gray-600">As an innovation company we Develope reliable, scalable applications tailored to your business needs. From concept to launch, we ensure every app meets our high standards.</p>
                     <a href="https://wa.me/message/Z6LNRPLPU7ERO1" target="_blank">
                     <button class="px-6 py-2 mt-4 bg-gradient-to-tr from-indigo-800 to-violet-600 text-white rounded-md hover:bg-indigo-700 transition duration-300">Get a Quote</button>
@@ -152,7 +159,7 @@
                     <img src="Assets/images/services/UIUX Design.png" alt="UI/UX Design" class="w-full rounded-lg shadow-lg scale-hover transition duration-300">
                 </div>
                 <div class="space-y-4 slide-up">
-                    <h3 class="text-2xl font-semibold text-white">UI/UX Design</h3>
+                    <h3 class="text-2xl montserrat-alternates-bold  text-white">UI/UX Design</h3>
                     <p class="text-white">As an innovation company, we design intuitive and beautiful interfaces that improve user experience. We ensure that every touchpoint leaves a positive impression on your users.</p>
                     <a href="https://wa.me/message/Z6LNRPLPU7ERO1" target="_blank">
                         <button class="px-6 py-2 mt-4 bg-slate-100 text-violet-800 rounded-md hover:bg-orange-500 hover:text-white transition duration-300">Get a Quote</button>
@@ -163,7 +170,7 @@
             <!-- Service 6: Data Solutions image 600by400-->
             <div class="grid md:grid-cols-2 gap-8 items-center">
                 <div class="order-2 md:order-1 space-y-4 slide-up">
-                    <h3 class="text-2xl font-semibold text-gray-800">Data Solutions</h3>
+                    <h3 class="text-2xl montserrat-alternates-bold  text-gray-800">Data Solutions</h3>
                     <p class="text-gray-600">We believe in transforming data into actionable insights that drive strategic decisions. We provide data solutions that empower you to make informed choices.</p>
              <a href="https://wa.me/message/Z6LNRPLPU7ERO1" target="_blank">
                     <button class="px-6 py-2 mt-4 bg-gradient-to-tr from-indigo-800 to-violet-600 text-white rounded-md hover:bg-orange-500 hover:text-white transition duration-300">Get a Quote</button>

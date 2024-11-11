@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your compelling description here">
     <title>Blacklemur Innovations</title>
+    
+    <!-- Open Graph tags for social sharing -->
+    <meta property="article:author" content="Claudius Mainja- Product and Brand Designer/Web Developer">
+    <meta property="og:title" content="Blacklemur Innovations">
+    <meta property="og:description" content="a Zimbabwe's premier creative agency delivering innovative solutions for forward-thinking brands.">
+    <link rel="icon" type="image/x-icon" href="Assets/images/icon.jpeg">
     <link rel="icon" type="image/x-icon" href="Assets/images/icon.jpeg">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.2/alpine.js"></script>
@@ -20,7 +27,7 @@
 <header>
 
     <!-- Navigation -->
-    <nav class="bg-white/90 backdrop-blur-md fixed w-full z-50 shadow-sm transition-all duration-300" 
+    <nav class="bg-white/90 backdrop-blur-md fixed w-full z-50 shadow-sm transition-all duration-300 montserrat text-lg" 
          x-data="{ isOpen: false, atTop: true }" 
          @scroll.window="atTop = (window.pageYOffset > 20) ? false : true"
          :class="{'py-2': !atTop, 'py-4': atTop}">
@@ -29,7 +36,7 @@
                 <div class="flex items-center">
                     <img src="Assets/images/Main Logo_Main 1.png" alt="logo" height="200px" width="200px" >
                 </div>
-                <div class="hidden md:flex items-center space-x-8">
+                <div class="hidden md:flex items-center space-x-8 montserrat">
                     <a href="index.html" class="text-indigo-800 hover:text-indigo-600 transition-colors">Home</a>
                     <a href="about us.html" class="text-indigo-800 hover:text-indigo-600 transition-colors">Who We Are</a>
                     <a href="services.html" class="text-indigo-800 hover:text-indigo-600 transition-colors">What We Do</a>
@@ -58,7 +65,7 @@
     </nav>
     </header>
 
-    <body class="bg-slate-100 text-violet-800 dark:bg-gradient-to-tr from-indigo-800 to-violet-600 dark:text:white ">
+    <body class="bg-slate-100 text-violet-800 dark:bg-gradient-to-tr from-indigo-800 to-violet-600 dark:text:white text-lg">
     <!-- Hero Section -->
     <div class="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0">
@@ -68,13 +75,13 @@
         
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
             <div class="text-white md:w-1/2 text-center md:text-left" data-aos="fade-right">
-                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight montserrat-alternates-black">
                     Transform Your <span class="text-indigo-400">Digital Presence</span>
                 </h1>
-                <p class="text-xl md:text-2xl mb-8 text-gray-300">
+                <p class="text-xl md:text-2xl mb-8 text-gray-300 montserrat">
                     With a Zimbabwe's premier creative agency delivering innovative solutions for forward-thinking brands.
                 </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start montserrat">
                     <a href="contact.html">
                     <button class="px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full text-lg font-semibold hover:shadow-xl transition duration-300 transform hover:-translate-y-0.5">
                         Get Started
@@ -94,10 +101,10 @@
     </div>
 
     <!-- Our services Section -->
-    <section class="py-20  relative overflow-hidden">
+    <section class="py-20  relative overflow-hidden montserrat">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4 inline-block text-violet-800 dark:text-white" data-aos="fade-up">What We Do</h2>
+                <h2 class="text-4xl font-bold mb-4 inline-block text-violet-800 dark:text-white montserrat-alternates-bold" data-aos="fade-up">What We Do</h2>
                 <p class="text-violet-800 text-lg dark:text-white" data-aos="fade-up" data-aos-delay="100">
                     We bring together expertise and innovation to deliver exceptional results
                 </p>
@@ -143,10 +150,10 @@
     </section>
 
     <!-- Portfolio Section -->
-    <section class="py-20 bg-gray-50">
+    <section class="py-20 bg-gray-50 montserrat">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4 gradient-text inline-block" data-aos="fade-up">Our Work</h2>
+                <h2 class="text-4xl font-bold mb-4 gradient-text inline-block montserrat-alternates-bold " data-aos="fade-up">Our Work</h2>
                 <p class="text-gray-600 text-lg" data-aos="fade-up" data-aos-delay="100">
                     Explore our latest projects and success stories
                 </p>
@@ -160,7 +167,7 @@
                     <div class="portfolio-overlay absolute inset-0 bg-gradient-to-t from-indigo-800 to-violet-600-to-transparent opacity-1 p-6 flex flex-col justify-end">
                         <h3 class="text-2xl font-bold text-white mb-2">Brand Evolution</h3>
                         <p class="text-white mb-4">Take a look at ourComplete brand design and digital transformation projects</p>
-                        <a href="portfolio.html" class="inline-flex items-center  text-white hover:text-white transition-colors">
+                        <a href="portfolio.html" class="inline-flex items-center  text-white hover:text-white transition-colors montserrat">
                             View Projects <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -204,10 +211,10 @@
 </section>
 
 <!-- Partners Section -->
-<section class="py-20 bg-white relative overflow-hidden">
+<section class="py-20 bg-white relative overflow-hidden montserrat">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold mb-4 gradient-text inline-block" data-aos="fade-up">Trusted Partners</h2>
+            <h2 class="text-4xl font-bold mb-4 gradient-text inline-block montserrat-alternates-bold " data-aos="fade-up">Trusted Partners</h2>
             <p class="text-gray-600 text-lg" data-aos="fade-up" data-aos-delay="100">
                 Proud to work with leading brands across industries
             </p>
@@ -258,7 +265,7 @@
 </section>
 
 <!-- Contact Section -->
-<section class="py-20 bg-gradient-to-br from-indigo-600 to-purple-600 relative overflow-hidden">
+<section class="py-20 bg-gradient-to-br from-indigo-600 to-purple-600 relative overflow-hidden montserrat">
     <div class="absolute inset-0 opacity-10">
         <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
             <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
@@ -268,9 +275,9 @@
         </svg>
     </div>
     
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl font-sans font-bold text-white mb-4" data-aos="fade-up">Ready to Transform Your Brand?</h2>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative montserrat text-lg">
+        <div class="text-center mb-16 montserrat">
+            <h2 class="text-4xl  text-white mb-4 montserrat-alternates-bold " data-aos="fade-up">Ready to Transform Your Brand?</h2>
             <p class="text-gray-200 text-lg" data-aos="fade-up" data-aos-delay="100">
                 Let's create something amazing together
             </p>
@@ -283,7 +290,7 @@
                         <i class="fas fa-map-marker-alt text-white text-xl"></i>
                     </div>
                     <div>
-                        <h3 class="text-white font-semibold">Location</h3>
+                        <h3 class="text-white montserrat-alternates-bold ">Location</h3>
                         <p class="text-gray-200">33 Argyle Road Avondale. Harare, Zimbabwe</p>
                     </div>
                 </div>
@@ -293,7 +300,7 @@
                         <i class="fas fa-envelope text-white text-xl"></i>
                     </div>
                     <div>
-                        <h3 class="text-white font-semibold">Email</h3>
+                        <h3 class="text-white montserrat-alternates-bold ">Email</h3>
                         <p class="text-gray-200" href="mailto:info@blacklemur.co.zw">info@blacklemur.co.zw</p>
                     </div>
                 </div>
@@ -303,7 +310,7 @@
                         <i class="fas fa-phone text-white text-xl"></i>
                     </div>
                     <div>
-                        <h3 class="text-white font-semibold">Phone</h3>
+                        <h3 class="text-white montserrat-alternates-bold ">Phone</h3>
                         <p class="text-white" href="tel:+263786187218"> +263 786 187 218</p>
                     </div>
                 </div>
@@ -335,7 +342,7 @@
 </body>
 
 <!-- Footer -->
-<footer class="bg-gray-900 text-white py-12">
+<footer class="bg-gray-900 text-white py-12 montserrat">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
             <div>
@@ -344,7 +351,7 @@
             </div>
             
             <div>
-                <h3 class="font-semibold text-lg mb-6">Services</h3>
+                <h3 class="montserrat-alternates-bold text-lg mb-6">Services</h3>
                 <ul class="space-y-4 text-gray-400">
                     <li><a href="services.html" class="hover:text-white transition-colors">Brand Design</a></li>
                     <li><a href="services.html" class="hover:text-white transition-colors">Web Development</a></li>
@@ -354,7 +361,7 @@
             </div>
             
             <div>
-                <h3 class="font-semibold text-lg mb-6">Company</h3>
+                <h3 class="montserrat-alternates-bold text-lg mb-6">Company</h3>
                 <ul class="space-y-4 text-gray-400">
                     <li><a href="about us.html" class="hover:text-white transition-colors">About Us</a></li>
                     <li><a href="portfolio.html" class="hover:text-white transition-colors">Our Work</a></li>
@@ -364,7 +371,7 @@
             </div>
             
             <div>
-                <h3 class="font-semibold text-lg mb-6">Follow Us</h3>
+                <h3 class="montserrat-alternates-bold  text-lg mb-6">Follow Us</h3>
                 <div class="flex space-x-4">
                     <a href="https://web.facebook.com/blacklemurinnovation" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors">
                         <i class="fab fa-facebook-f"></i>

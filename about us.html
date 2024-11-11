@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your compelling description here">
     <title>Blacklemur Innovations</title>
+    
+    <!-- Open Graph tags for social sharing -->
+    <meta property="article:author" content="Claudius Mainja- Product and Brand Designer/Web Developer">
+    <meta property="og:title" content="Blacklemur Innovations">
+    <meta property="og:description" content="a Zimbabwe's premier creative agency delivering innovative solutions for forward-thinking brands.">
+    <link rel="icon" type="image/x-icon" href="Assets/images/icon.jpeg">
     <link rel="icon" type="image/x-icon" href="Assets/images/icon.jpeg">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.2/alpine.js"></script>
@@ -20,7 +27,7 @@
 <header>
 
     <!-- Navigation -->
-    <nav class="bg-white/90 backdrop-blur-md fixed w-full z-50 shadow-sm transition-all duration-300" 
+    <nav class="bg-white/90 backdrop-blur-md fixed w-full z-50 shadow-sm transition-all duration-300 montserrat text-lg" 
          x-data="{ isOpen: false, atTop: true }" 
          @scroll.window="atTop = (window.pageYOffset > 20) ? false : true"
          :class="{'py-2': !atTop, 'py-4': atTop}">
@@ -58,14 +65,14 @@
     </nav>
     </header>
            
-    <body class="bg-slate-100 text-violet-800 dark:bg-gradient-to-tr from-indigo-800 to-violet-600 dark:text:white ">>
+    <body class="bg-slate-100 text-violet-800 dark:bg-gradient-to-tr from-indigo-800 to-violet-600 dark:text:white montserrat text-lg">>
     
     <!-- Hero Section with Parallax Effect -->
     <section class="relative bg-cover bg-center h-screen parallax" style="background-image: url('Assets/images/aboutus');">
         <div class="absolute inset-0 bg-indigo-800 opacity-20"></div>
         <div class="relative flex items-center justify-center h-full text-center text-white">
             <div class="space-y-6 fade-in-up">
-                <h1 class="text-4xl md:text-5xl font-bold"> We Stand In</h1>
+                <h1 class="text-4xl md:text-5xl montserrat-alternates-bold "> We Stand In</h1>
                 <p class="text-lg md:text-2xl">Empowering Brands to Realize Their Full Potential</p>
             </div>
         </div>
@@ -74,20 +81,20 @@
       <!-- Mission Statement Section -->
       <section class="py-16 bg-indigo-800" id="mission">
         <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center fade-in-up">
-            <h2 class="text-3xl md:text-4xl font-bold text-orange-100 mb-6">Our Mission</h2>
-            <p class="text-white leading-relaxed">
+            <h2 class="text-3xl md:text-4xl montserrat-alternates-bold  text-orange-100 mb-6">Our Mission</h2>
+            <p class="text-white leading-relaxed text-lg">
                 At Blacklemur Innovations, our mission is to empower brands by delivering strategic and creative solutions that connect with their audience, drive growth, and create impactful experiences. We’re committed to helping businesses unlock their full potential in a rapidly evolving digital landscape.
             </p>
         </div>
     </section>
 
       <!-- Who We Are and Our Values Section -->
-      <section class="py-16 bg-white" id="who-we-are">
+      <section class="py-16 bg-white text-xl" id="who-we-are">
         <div class="max-w-5xl mx-auto px-6 lg:px-8 text-center fade-in-up">
      
             
             <!-- Values Section -->
-            <h3 class="text-2xl md:text-3xl font-bold text-indigo-700 mb-6">Our Values</h3>
+            <h3 class="text-lg md:text-3xl montserrat-alternates-bold  text-indigo-700 mb-6">Our Values</h3>
             <div class="grid gap-8 md:grid-cols-3">
                 <!-- Value 1 -->
                 <div class="p-6 bg-gray-50 shadow-lg rounded-lg fade-in-up">
@@ -112,7 +119,7 @@
     <!-- Why Choose Us Section -->
     <section class="py-16 bg-indigo-800 text-white">
         <div class="max-w-5xl mx-auto px-6 lg:px-8 text-center fade-in-up">
-            <h2 class="text-3xl md:text-4xl font-bold text-orange-100 mb-8">Why Choose Us</h2>
+            <h2 class="text-3xl md:text-4xl montserrat-alternates-bold  text-orange-100 mb-8">Why Choose Us</h2>
             <div class="grid gap-12 md:grid-cols-3">
                 <!-- Reason 1 -->
                 <div class="p-6 bg-white shadow-lg rounded-lg transform hover:scale-105 transition duration-300 fade-in-up">
@@ -138,7 +145,7 @@
     <!-- Trusted Partners Section -->
     <section class="py-16 bg-gray-100">
         <div class="max-w-5xl mx-auto px-6 lg:px-8 text-center fade-in-up">
-            <h2 class="text-3xl md:text-4xl font-bold text-indigo-800 mb-8">Our Trusted Partners</h2>
+            <h2 class="text-3xl md:text-4xl montserrat-alternates-bold  text-indigo-800 mb-8">Our Trusted Partners</h2>
             <p class="text-gray-600 leading-relaxed mb-12">
                 We’ve had the privilege of partnering with a diverse range of clients, from startups to established brands, who trust us to bring their vision to life.
             </p>
