@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 .montserrat-alternates-thin {
     font-family: "Montserrat Alternates", sans-serif;
