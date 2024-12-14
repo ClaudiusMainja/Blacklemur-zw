@@ -11,30 +11,28 @@
     <meta property="og:title" content="Blacklemur Innovations">
     <meta property="og:description" content="a Zimbabwe's premier creative agency delivering innovative solutions for forward-thinking brands.">
     <link rel="icon" type="image/x-icon" href="Assets/images/icon.jpeg">
-    <link rel="icon" type="image/x-icon" href="Assets/images/icon.jpeg">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.2/alpine.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/main.css">
 
 </head>
 
-
-<header>
-
     <!-- Navigation -->
-    <nav class="bg-white/90 backdrop-blur-md fixed w-full z-50 shadow-sm transition-all duration-300 montserrat text-lg" 
+<header>
+    <nav class="bg-white/90 backdrop-blur-md fixed w-full z-50 shadow-sm transition-all duration-300 montserrat text-lg py-12" 
          x-data="{ isOpen: false, atTop: true }" 
          @scroll.window="atTop = (window.pageYOffset > 20) ? false : true"
          :class="{'py-2': !atTop, 'py-4': atTop}">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center">
                 <div class="flex items-center">
-                    <img src="Assets/images/Main Logo_Main 1.png" alt="logo" height="200px" width="200px" >
+                    <img src="/Assets/images/Main Logo_Main 1.png" alt="logo" height="200px" width="200px" >
                 </div>
                 <div class="hidden md:flex items-center space-x-8 montserrat">
                     <a href="/index.html" class="text-indigo-800 hover:text-indigo-600 transition-colors">Home</a>
@@ -64,44 +62,83 @@
         </div>
     </nav>
     </header>
-
+    <Script>
+        // Check system theme preference
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+               document.documentElement.classList.add('dark');
+           }
+           
+           // Initialize particles
+           document.addEventListener('DOMContentLoaded', function() {
+               particlesJS('particles-js', {
+                   particles: {
+                       number: { value: 10 },
+                       color: { value: '#fff' },
+                       shape: { type: 'circle' },
+                       opacity: {
+                           value: 0.3,
+                           random: false
+                       },
+                       size: {
+                           value: 2,
+                           random: true
+                       },
+                       move: {
+                           enable: true,
+                           speed: 4,
+                           direction: 'none',
+                           random: false,
+                           straight: false,
+                           outModes: { default: 'bounce' }
+                       }
+                   }
+               });
+           });
+       </Script>
     <body class="bg-slate-100 text-violet-800 dark:bg-gradient-to-tr from-indigo-800 to-violet-600 dark:text:white text-lg">
+
+ 
     <!-- Hero Section -->
-    <div class="relative min-h-screen flex items-center justify-center overflow-hidden">
+     <section class="">
+    <div class="relative min-h-screen flex items-center justify-center overflow-hidden pt-60">
         <div class="absolute inset-0">
             <img src="Assets/images/homebg.jpg" alt="Hero background" class="w-full h-full object-cover filter brightness-50"/>
             <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-purple-900/40"></div>
         </div>
+
+            <!-- Particles effect -->
+            <div id="particles-js" class="absolute inset-0 z-10 "></div>
         
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-12 lg:px-8 flex flex-col md:flex-row items-center justify-between">
             <div class="text-white md:w-1/2 text-center md:text-left" data-aos="fade-right">
                 <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight montserrat-alternates-black">
-                    Transform Your <span class="text-indigo-400">Digital Presence</span>
+                    Transform Your <span class="text-indigo-600">Digital Presence</span>
                 </h1>
                 <p class="text-xl md:text-2xl mb-8 text-gray-300 montserrat">
                     With a Zimbabwe's premier creative agency delivering innovative solutions for forward-thinking brands.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start montserrat">
-                    <a href="/page/contact.html">
-                    <button class="px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full text-lg font-semibold hover:shadow-xl transition duration-300 transform hover:-translate-y-0.5">
-                        Get Started
+                    <a href="/page/contact.html"target="_blank">
+                    <button class="px-12 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full text-lg font-semibold hover:shadow-xl transition duration-300 transform hover:-translate-y-0.5">
+                        Let's Talk!
                     </button>
                 </a>
                 <a href="/page/portfolio.html">
-                    <button class="px-8 py-4 border-2 border-white rounded-full text-lg font-semibold hover:bg-white hover:text-indigo-600 transition duration-300">
+                    <button class="px-12 py-4 border-2 border-white rounded-full text-lg font-semibold hover:bg-white hover:text-indigo-600 transition duration-300">
                         Our Work
                     </button>
                 </a>
                 </div>
             </div>
             <div class="md:w-1/2 mt-12 md:mt-0 float-animation" data-aos="fade-left">
-                <img src="Assets/images/hero1" alt="Hero illustration" class="w-full max-w-md mx-auto"/>
+                <img src="Assets/images/homebg.png" alt="Hero illustration" class="w-[600] h-[500] rounded-3xl"/>
             </div>
         </div>
     </div>
+</section>
 
     <!-- Our services Section -->
-    <section class="py-20  relative overflow-hidden montserrat">
+    <section class="py-20  relative overflow-hidden montserrat bg-purple-800 dark:bg-indigo-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold mb-4 inline-block text-violet-800 dark:text-white montserrat-alternates-bold" data-aos="fade-up">What We Do</h2>
@@ -227,36 +264,36 @@
             <div class="flex overflow-hidden space-x-16 group">
                 <div class="flex space-x-16 animate-carousel">
                     <div class="w-48 h-24 bg-white rounded-lg shadow-md p-4 flex items-center justify-center">
-                        <img src="Assets/images/partners/partner_classicre.png" alt="Classic Reinsurance Brokers" class="max-h-12 grayscale hover:grayscale-0 transition duration-300"/>
+                        <img src="Assets/images/partners/partner_classicre.png" alt="Classic Reinsurance Brokers" class="max-h-48 hover:grayscale-0 transition duration-300"/>
                     </div>
                     <div class="w-48 h-24 bg-white rounded-lg shadow-md p-4 flex items-center justify-center">
-                        <img src="Assets/images/partners/partner_NELC.png" alt="Nature Extant Learning Centre" class="max-h-12 grayscale hover:grayscale-0 transition duration-300"/>
+                        <img src="Assets/images/partners/partner_NELC.png" alt="Nature Extant Learning Centre" class="max-h-48 hover:grayscale-0 transition duration-300"/>
                     </div>
                     <div class="w-48 h-24 bg-white rounded-lg shadow-md p-4 flex items-center justify-center">
-                        <img src="Assets/images/partners/partners_7artsThetre.png" alt=" 7 Arts Theatre 3" class="max-h-12 grayscale hover:grayscale-0 transition duration-300"/>
+                        <img src="Assets/images/partners/partners_7artsThetre.png" alt=" 7 Arts Theatre 3" class="max-h-48 hover:grayscale-0 transition duration-300"/>
                     </div>
                     <div class="w-48 h-24 bg-white rounded-lg shadow-md p-4 flex items-center justify-center">
-                        <img src="Assets/images/partners/partner_hackerforencis.png" alt="Hackers Forensic" class="max-h-12 grayscale hover:grayscale-0 transition duration-300"/>
+                        <img src="Assets/images/partners/partner_hackerforencis.png" alt="Hackers Forensic" class="max-h-48 hover:grayscale-0 transition duration-300"/>
                     </div>
                     <div class="w-48 h-24 bg-white rounded-lg shadow-md p-4 flex items-center justify-center">
-                        <img src="Assets/images/partners/partner_takadha.png" alt="Takadah" class="max-h-12 grayscale hover:grayscale-0 transition duration-300"/>
+                        <img src="Assets/images/partners/partner_takadha.png" alt="Takadah" class="max-h-48 hover:grayscale-0 transition duration-300"/>
                     </div>
                 </div>
                 <div class="flex space-x-16 animate-carousel">
                     <div class="w-48 h-24 bg-white rounded-lg shadow-md p-4 flex items-center justify-center">
-                        <img src="Assets/images/partners/partner_beegra.png" alt="Beegra Construction" class="max-h-12 grayscale hover:grayscale-0 transition duration-300"/>
+                        <img src="Assets/images/partners/partner_beegra.png" alt="Beegra Construction" class="max-h-48 hover:grayscale-0 transition duration-300"/>
                     </div>
                     <div class="w-48 h-24 bg-white rounded-lg shadow-md p-4 flex items-center justify-center">
-                        <img src="Assets/images/partners/partner_cruisejob.png" alt="Cruise Job Assist" class="max-h-12 grayscale hover:grayscale-0 transition duration-300"/>
+                        <img src="Assets/images/partners/partner_cruisejob.png" alt="Cruise Job Assist" class="max-h-48 hover:grayscale-0 transition duration-300"/>
                     </div>
                     <div class="w-48 h-24 bg-white rounded-lg shadow-md p-4 flex items-center justify-center">
-                        <img src="Assets/images/partners/partner_MG DESIGNS.png" alt="MG Designs" class="max-h-12 grayscale hover:grayscale-0 transition duration-300"/>
+                        <img src="Assets/images/partners/partner_MG DESIGNS.png" alt="MG Designs" class="max-h-48 hover:grayscale-0 transition duration-300"/>
                     </div>
                     <div class="w-48 h-24 bg-white rounded-lg shadow-md p-4 flex items-center justify-center">
-                        <img src="Assets/images/partners/partner_frostice.png" alt="FrostIce " class="max-h-12 grayscale hover:grayscale-0 transition duration-300"/>
+                        <img src="Assets/images/partners/partner_frostice.png" alt="FrostIce " class="max-h-48 hover:grayscale-0 transition duration-300"/>
                     </div>
                     <div class="w-48 h-24 bg-white rounded-lg shadow-md p-4 flex items-center justify-center">
-                        <img src="Assets/images/partners/partner_muhegra.png" alt="Mujegra" class="max-h-12 grayscale hover:grayscale-0 transition duration-300"/>
+                        <img src="Assets/images/partners/partner_muhegra.png" alt="Mujegra" class="max-h-48 hover:grayscale-0 transition duration-300"/>
                     </div>
                 </div>
             </div>
@@ -395,7 +432,9 @@
     </div>
 </footer>
 
-<script>
+ <!-- Script Section -->
+ <script>
+  
     // Initialize AOS
     AOS.init({
         duration: 1000,
