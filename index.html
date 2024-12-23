@@ -72,7 +72,7 @@
            document.addEventListener('DOMContentLoaded', function() {
                particlesJS('particles-js', {
                    particles: {
-                       number: { value: 10 },
+                       number: { value: 30 },
                        color: { value: '#fff' },
                        shape: { type: 'circle' },
                        opacity: {
@@ -106,8 +106,7 @@
             <div class="absolute inset-0 bg-gradient-to-r from-black/60 to-purple-900/40"></div>
         </div>
 
-            <!-- Particles effect -->
-            <div id="particles-js" class="absolute inset-0 z-10 "></div>
+
         
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-12 lg:px-8 flex flex-col md:flex-row items-center justify-between">
             <div class="text-white md:w-1/2 text-center md:text-left" data-aos="fade-right">
@@ -139,6 +138,9 @@
 
     <!-- Our services Section -->
     <section class="py-20  relative overflow-hidden montserrat bg-purple-800 dark:bg-indigo-800">
+
+                    <!-- Particles effect -->
+                    <div id="particles-js" class="absolute inset-0 z-10 "></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
                 <h2 class="text-4xl font-bold mb-4 inline-block text-violet-800 dark:text-white montserrat-alternates-bold" data-aos="fade-up">What We Do</h2>
@@ -293,7 +295,7 @@
                         <img src="Assets/images/partners/partner_frostice.png" alt="FrostIce " class="max-h-48 hover:grayscale-0 transition duration-300"/>
                     </div>
                     <div class="w-48 h-24 bg-white rounded-lg shadow-md p-4 flex items-center justify-center">
-                        <img src="Assets/images/partners/partner_muhegra.png" alt="Mujegra" class="max-h-48 hover:grayscale-0 transition duration-300"/>
+                        <img src="Assets/images/partners/partner_muhegra.png" alt="Mujegra" class="max-h-48 hover:grayscale-0 transition duration-300 rounded-xl"/>
                     </div>
                 </div>
             </div>
@@ -302,11 +304,13 @@
 </section>
 
 <!-- Contact Section -->
-<section class="py-20 bg-gradient-to-br from-indigo-600 to-purple-600 relative overflow-hidden montserrat">
-    <div class="absolute inset-0 opacity-10">
+<section class="py-20 bg-gradient-to-br from-indigo-800 to-purple-600 relative overflow-hidden montserrat">
+
+    
+    <div class="absolute inset-0 opacity-5">
         <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
             <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
-                <path d="M 10 0 L 0 0 0 10" fill="none" stroke="white" stroke-width="0.5"/>
+                <path d="M 10 0 L 0 0 0 10" fill="none" stroke="white" stroke-width="0.2"/>
             </pattern>
             <rect width="100" height="100" fill="url(#grid)"/>
         </svg>
@@ -383,12 +387,12 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
             <div>
-                <div class="text-2xl font-bold mb-6">at BLacklemur Innovations</div>
+                <div class="text-2xl font-bold mb-6">About Us</div>
                 <p class="text-gray-400">Our mission is to empower businesses by providing cutting-edge solutions in brand design, web and application development, marketing strategies, and data solutions.</p>
             </div>
             
             <div>
-                <h3 class="montserrat-alternates-bold text-lg mb-6">Services</h3>
+                <h3 class="montserrat-alternates-bold text-2xl mb-6">Services</h3>
                 <ul class="space-y-4 text-gray-400">
                     <li><a href="/page/services.html" class="hover:text-white transition-colors">Brand Design</a></li>
                     <li><a href="/page/services.html" class="hover:text-white transition-colors">Web Development</a></li>
@@ -398,7 +402,7 @@
             </div>
             
             <div>
-                <h3 class="montserrat-alternates-bold text-lg mb-6">Company</h3>
+                <h3 class="montserrat-alternates-bold text-2xl mb-6">Company</h3>
                 <ul class="space-y-4 text-gray-400">
                     <li><a href="about us.html" class="hover:text-white transition-colors">About Us</a></li>
                     <li><a href="/page/portfolio.html" class="hover:text-white transition-colors">Our Work</a></li>
@@ -408,7 +412,7 @@
             </div>
             
             <div>
-                <h3 class="montserrat-alternates-bold  text-lg mb-6">Follow Us</h3>
+                <h3 class="montserrat-alternates-bold  text-xl mb-6">Follow Us</h3>
                 <div class="flex space-x-4">
                     <a href="https://web.facebook.com/blacklemurinnovation" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors">
                         <i class="fab fa-facebook-f"></i>

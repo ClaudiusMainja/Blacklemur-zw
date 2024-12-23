@@ -22,6 +22,40 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/srcs/about.css">
 
+    <Script>
+        // Check system theme preference
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+               document.documentElement.classList.add('dark');
+           }
+           
+           // Initialize particles
+           document.addEventListener('DOMContentLoaded', function() {
+               particlesJS('particles-js', {
+                   particles: {
+                       number: { value: 30 },
+                       color: { value: '#fff' },
+                       shape: { type: 'circle' },
+                       opacity: {
+                           value: 0.5,
+                           random: false
+                       },
+                       size: {
+                           value: 2,
+                           random: true
+                       },
+                       move: {
+                           enable: true,
+                           speed: 4,
+                           direction: 'none',
+                           random: false,
+                           straight: false,
+                           outModes: { default: 'bounce' }
+                       }
+                   }
+               });
+           });
+       </Script>
+
 </head>
 
 
@@ -70,6 +104,9 @@
     
     <!-- Hero Section with Parallax Effect -->
     <section class="relative bg-cover bg-center h-screen parallax" style="background-image: url('/Assets/images/aboutus');">
+
+                    <!-- Particles effect -->
+                    <div id="particles-js" class="absolute inset-0 z-10 "></div>
         <div class="absolute inset-0 bg-indigo-800 opacity-20"></div>
         <div class="relative flex items-center justify-center h-full text-center text-white">
             <div class="space-y-6 fade-in-up">
@@ -192,16 +229,16 @@
     </body>
     
 <!-- Footer -->
-<footer class="bg-gray-900 text-white py-12">
+<footer class="bg-gray-900 text-white py-12 montserrat">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
             <div>
-                <div class="text-2xl font-bold mb-6">at BLacklemur Innovations</div>
+                <div class="text-2xl font-bold mb-6">About Us</div>
                 <p class="text-gray-400">Our mission is to empower businesses by providing cutting-edge solutions in brand design, web and application development, marketing strategies, and data solutions.</p>
             </div>
             
             <div>
-                <h3 class="font-semibold text-lg mb-6">Services</h3>
+                <h3 class="montserrat-alternates-bold text-2xl mb-6">Services</h3>
                 <ul class="space-y-4 text-gray-400">
                     <li><a href="/page/services.html" class="hover:text-white transition-colors">Brand Design</a></li>
                     <li><a href="/page/services.html" class="hover:text-white transition-colors">Web Development</a></li>
@@ -211,9 +248,9 @@
             </div>
             
             <div>
-                <h3 class="font-semibold text-lg mb-6">Company</h3>
+                <h3 class="montserrat-alternates-bold text-2xl mb-6">Company</h3>
                 <ul class="space-y-4 text-gray-400">
-                    <li><a href="/page/about us.html" class="hover:text-white transition-colors">About Us</a></li>
+                    <li><a href="about us.html" class="hover:text-white transition-colors">About Us</a></li>
                     <li><a href="/page/portfolio.html" class="hover:text-white transition-colors">Our Work</a></li>
                     <li><a href="mailto:info@blacklemur.co.zw" class="hover:text-white transition-colors">Careers</a></li>
                     <li><a href="/page/contact.html" class="hover:text-white transition-colors">Contact</a></li>
@@ -221,7 +258,7 @@
             </div>
             
             <div>
-                <h3 class="font-semibold text-lg mb-6">Follow Us</h3>
+                <h3 class="montserrat-alternates-bold  text-xl mb-6">Follow Us</h3>
                 <div class="flex space-x-4">
                     <a href="https://web.facebook.com/blacklemurinnovation" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors">
                         <i class="fab fa-facebook-f"></i>
