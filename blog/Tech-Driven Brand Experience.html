@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your compelling description here">
+    <title>Blacklemur Innovations</title>
+    
+    <!-- Open Graph tags for social sharing -->
+    <meta property="article:author" content="Claudius Mainja- Product and Brand Designer/Web Developer">
+    <meta property="og:title" content="Blacklemur Innovations">
+    <meta property="og:description" content="a Zimbabwe's premier creative agency delivering innovative solutions for forward-thinking brands.">
+    <link rel="icon" type="image/x-icon" href="Assets/images/icon.jpeg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.2/alpine.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+</head>
+
+    <!-- Navigation -->
+<header>
+    <nav class="bg-white/90 backdrop-blur-md fixed w-full z-50 shadow-sm transition-all duration-300 montserrat text-lg py-12" 
+         x-data="{ isOpen: false, atTop: true }" 
+         @scroll.window="atTop = (window.pageYOffset > 20) ? false : true"
+         :class="{'py-2': !atTop, 'py-4': atTop}">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="/Assets/images/Main Logo_Main 1.png" alt="logo" height="200px" width="200px" >
+                </div>
+                <div class="hidden md:flex items-center space-x-8 montserrat">
+                    <a href="/index.html" class="text-indigo-800 hover:text-indigo-600 transition-colors">Home</a>
+                    <a href="/page/about us.html" class="text-indigo-800 hover:text-indigo-600 transition-colors">Who We Are</a>
+                    <a href="/page/services.html" class="text-indigo-800 hover:text-indigo-600 transition-colors">What We Do</a>
+                    <a href="/page/insights.html" class="text-indigo-800 hover:text-indigo-600 transition-colors">Insights</a>
+                    <a href="/page/portfolio.html" class="text-indigo-800 hover:text-indigo-600 transition-colors">Our Work</a>
+                    <a href="/page/contact.html" class="px-6 py-3 text-white bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full hover:shadow-lg transition duration-300 transform hover:-translate-y-0.5">
+                        Contact Us
+                    </a>
+                </div>
+                <button @click="isOpen = !isOpen" class="md:hidden text-gray-700 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile menu -->
+            <div class="md:hidden" x-show="isOpen" x-transition>
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 transition-colors">Home</a>
+                    <a href="about us.html" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 transition-colors">Who We Are</a>
+                    <a href="/page/services.html" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 transition-colors">What We Do</a>
+                    <a href="/page/insights.html" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 transition-colors">Insights</a>
+                    <a href="/page/portfolio.html" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 transition-colors">Our Work</a>
+                    <a href="/page/contact.html" class="block px-3 py-2 text-white bg-gradient-to-r from-indigo-600 to-purple-600 rounded-md">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    </header>
+    <!-- End Navigation -->
+
+    <body class="bg-gray-50">
+        <main class="min-h-screen">
+            <!-- Hero Section -->
+            <section class="relative h-[60vh] md:h-[70vh] bg-gradient-to-br from-[#050F55] to-[#0A1B8F] overflow-hidden">
+                <div class="absolute inset-0 bg-[url('/api/placeholder/1920/1080')] opacity-20 bg-cover bg-center"></div>
+                <div class="container mx-auto px-4 h-full flex items-center relative z-10">
+                    <div class="max-w-4xl" data-aos="fade-up">
+                        <h1 class="text-3xl md:text-5xl font-bold text-white mb-6">Tech-Driven Brand Experience: Leveraging Social Media and Community Engagement for Business Growth</h1>
+                        <p class="text-[#DEE0E8] text-lg md:text-xl">By Blacklemur Innovations | Creative Digital Marketing Agency</p>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Article Content -->
+            <article class="container mx-auto px-4 py-12 md:py-20">
+                <div class="max-w-4xl mx-auto">
+                    <!-- Introduction -->
+                    <div class="mb-16" data-aos="fade-up">
+                        <p class="text-lg text-gray-700 leading-relaxed mb-8">
+                            A tech-driven brand experience is not just an advantage—it's a necessity. At Blacklemur Innovations, a leading creative agency, we specialize in integrating advanced technology, social media marketing, and community engagement to deliver impactful brand experiences.
+                        </p>
+                        <div class="relative h-64 md:h-96 rounded-xl overflow-hidden mb-8">
+                            <img src="/Assets/images/banner-4.png" alt="Digital Marketing" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+    
+                    <!-- GoDigital Campaign Section -->
+                    <section class="mb-16" data-aos="fade-up">
+                        <h2 class="text-2xl md:text-3xl font-bold text-[#050F55] mb-6">GoDigital Campaign: Focus on Empowering Non-Tech-Savvy Entrepreneurs</h2>
+                        <div class="bg-gradient-to-r from-[#DEE0E8]/20 to-transparent p-6 rounded-xl mb-8">
+                            <p class="text-gray-700 leading-relaxed">
+                                The informal sector, made up of non-tech-savvy entrepreneurs and small businesses, often struggles to adapt to digital marketing trends. To address this, Blacklemur Innovations launched the GoDigital Campaign in Zimbabwe, a targeted digital marketing strategy designed to empower small businesses and entrepreneurs to thrive online.
+                            </p>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="relative h-64 rounded-xl overflow-hidden">
+                                <img src="/Assets/images/TECHDIRV_SOM.png" alt="Social Media Marketing" class="w-full h-full object-cover">
+                            </div>
+                            <div class="flex items-center">
+                                <p class="text-gray-700 leading-relaxed">
+                                    Through optimized social media marketing strategies, we engaged informal sector entrepreneurs using relatable content tailored to simplify complex digital concepts. Platforms like Facebook, Instagram, and WhatsApp became essential tools for reaching these audiences.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+    
+                    <!-- Webinars and Seminars Section -->
+                    <section class="mb-16" data-aos="fade-up">
+                        <h2 class="text-2xl md:text-3xl font-bold text-[#050F55] mb-6">Webinars and Seminars: Building Digital Skills for Business Success</h2>
+                        <div class="bg-white shadow-xl rounded-xl p-8 mb-8">
+                            <div class="grid md:grid-cols-2 gap-8">
+                                <div class="relative h-64 rounded-xl overflow-hidden">
+                                    <img src="/Assets/images/TECHDIRV_webinars.png" alt="Webinar Session" class="w-full h-full object-cover">
+                                </div>
+                                <div class="flex flex-col justify-center">
+                                    <p class="text-gray-700 leading-relaxed mb-4">
+                                        To further support business growth, we hosted a series of webinars and in-person seminars focused on practical digital skills. These training sessions covered key topics such as social media marketing, SEO strategies, e-commerce development, and digital branding.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+    
+                    <!-- Social Media Section -->
+                    <section class="mb-16" data-aos="fade-up">
+                        <h2 class="text-2xl md:text-3xl font-bold text-[#050F55] mb-6">Maximizing Social Media for Community Engagement</h2>
+                        <div class="relative h-64 md:h-96 rounded-xl overflow-hidden mb-8">
+                            <img src="/Assets/images/abs.jpg" alt="Community Engagement" class="w-full h-full object-cover">
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">
+                            Social media marketing remains central to our strategy for driving brand growth. During the GoDigital Campaign, we created highly shareable, SEO-rich content that resonated with the community while introducing digital solutions.
+                        </p>
+                    </section>
+    
+                    <!-- Results Section -->
+                    <section class="mb-16" data-aos="fade-up">
+                        <h2 class="text-2xl md:text-3xl font-bold text-[#050F55] mb-6">Proven Results and Business Growth</h2>
+                        <div class="bg-gradient-to-br from-[#050F55] to-[#0A1B8F] text-white rounded-xl p-8">
+                            <p class="leading-relaxed mb-4">
+                                The GoDigital Campaign generated significant results. Businesses reported increased online engagement, higher customer retention, and greater market reach. Our social media analytics showed substantial growth in followers and user interactions, confirming the effectiveness of our digital marketing strategies.
+                            </p>
+                        </div>
+                    </section>
+    
+                    <!-- Call to Action -->
+                    <section class="text-center" data-aos="fade-up">
+                        <h2 class="text-2xl md:text-3xl font-bold text-[#050F55] mb-6">Ready to Transform Your Business?</h2>
+                        <p class="text-gray-700 mb-8">Let Blacklemur Innovations guide your business into the future with innovative digital marketing solutions.</p>
+                        <a href="mailto:info@blacklemur.co.zw" class="inline-block bg-[#EB871E] hover:bg-[#EB871E]/90 text-white font-semibold px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105">
+                            Contact Us Today
+                        </a>
+                    </section>
+                </div>
+            </article>
+        </main>
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                AOS.init({
+                    duration: 1000,
+                    once: true,
+                    offset: 100
+                });
+    
+                // Initialize GSAP ScrollTrigger
+                gsap.registerPlugin(ScrollTrigger);
+    
+                // Animate images on scroll
+                gsap.utils.toArray('img').forEach(img => {
+                    gsap.from(img, {
+                        scrollTrigger: {
+                            trigger: img,
+                            start: 'top bottom',
+                            end: 'bottom top',
+                            scrub: 1
+                        },
+                        scale: 1.1,
+                        duration: 1
+                    });
+                });
+            });
+        </script>
+                        </body>
+
+    <footer class="bg-gray-900 text-white py-12 montserrat">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <div class="text-2xl font-bold mb-6">About Us</div>
+                    <p class="text-gray-400">Our mission is to empower businesses by providing cutting-edge solutions in brand design, web and application development, marketing strategies, and data solutions.</p>
+                </div>
+                
+                <div>
+                    <h3 class="montserrat-alternates-bold text-2xl mb-6">Services</h3>
+                    <ul class="space-y-4 text-gray-400">
+                        <li><a href="/page/services.html" class="hover:text-white transition-colors">Brand Design</a></li>
+                        <li><a href="/page/services.html" class="hover:text-white transition-colors">Web Development</a></li>
+                        <li><a href="/page/services.html" class="hover:text-white transition-colors">Digital Marketing</a></li>
+                        <li><a href="/page/services.html" class="hover:text-white transition-colors">Data Solutions</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="montserrat-alternates-bold text-2xl mb-6">Company</h3>
+                    <ul class="space-y-4 text-gray-400">
+                        <li><a href="about us.html" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="/page/portfolio.html" class="hover:text-white transition-colors">Our Work</a></li>
+                        <li><a href="mailto:info@blacklemur.co.zw" class="hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="/page/contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="montserrat-alternates-bold  text-xl mb-6">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://web.facebook.com/blacklemurinnovation" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com/blacklemurs1" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/theblproject" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/theblproject" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 BLacklemur Innovations. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+     <!-- Script Section -->
+ <script>
+  
+    // Initialize AOS
+    AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100
+    });
+
+    // Animate carousel
+    gsap.to(".animate-carousel", {
+        x: "-100%",
+        repeat: -1,
+        duration: 30,
+        ease: "linear"
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Initialize GSAP ScrollTrigger
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Animate images on scroll
+        gsap.utils.toArray('img').forEach(img => {
+            gsap.from(img, {
+                scrollTrigger: {
+                    trigger: img,
+                    start: 'top bottom',
+                    end: 'bottom top',
+                    scrub: 1
+                },
+                scale: 1.1,
+                duration: 1
+            });
+        });
+    });
+</script>
+
+<script>
+    // Initialize GSAP ScrollTrigger
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Animate blog cards on scroll
+    gsap.utils.toArray('.blog-card').forEach((card, i) => {
+        gsap.from(card, {
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: card,
+                start: 'top bottom-=100',
+                toggleActions: 'play none none reverse'
+            }
+        });
+    });
+</script>
+
+</html>

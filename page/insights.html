@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your compelling description here">
+    <title>Blacklemur Innovations</title>
+    
+    <!-- Open Graph tags for social sharing -->
+    <meta property="article:author" content="Claudius Mainja- Product and Brand Designer/Web Developer">
+    <meta property="og:title" content="Blacklemur Innovations">
+    <meta property="og:description" content="a Zimbabwe's premier creative agency delivering innovative solutions for forward-thinking brands.">
+    <link rel="icon" type="image/x-icon" href="Assets/images/icon.jpeg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.2/alpine.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/main.css">
+
+</head>
+
+    <!-- Navigation -->
+<header>
+    <nav class="bg-white/90 backdrop-blur-md fixed w-full z-50 shadow-sm transition-all duration-300 montserrat text-lg py-12" 
+         x-data="{ isOpen: false, atTop: true }" 
+         @scroll.window="atTop = (window.pageYOffset > 20) ? false : true"
+         :class="{'py-2': !atTop, 'py-4': atTop}">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="/Assets/images/Main Logo_Main 1.png" alt="logo" height="200px" width="200px" >
+                </div>
+                <div class="hidden md:flex items-center space-x-8 montserrat">
+                    <a href="/index.html" class="text-indigo-800 hover:text-indigo-600 transition-colors">Home</a>
+                    <a href="/page/about us.html" class="text-indigo-800 hover:text-indigo-600 transition-colors">Who We Are</a>
+                    <a href="/page/services.html" class="text-indigo-800 hover:text-indigo-600 transition-colors">What We Do</a>
+                    <a href="/page/insights.html" class="text-indigo-800 hover:text-indigo-600 transition-colors">Insights</a>
+                    <a href="/page/portfolio.html" class="text-indigo-800 hover:text-indigo-600 transition-colors">Our Work</a>
+                    <a href="/page/contact.html" class="px-6 py-3 text-white bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full hover:shadow-lg transition duration-300 transform hover:-translate-y-0.5">
+                        Contact Us
+                    </a>
+                </div>
+                <button @click="isOpen = !isOpen" class="md:hidden text-gray-700 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile menu -->
+            <div class="md:hidden" x-show="isOpen" x-transition>
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="index.html" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 transition-colors">Home</a>
+                    <a href="about us.html" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 transition-colors">Who We Are</a>
+                    <a href="/page/services.html" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 transition-colors">What We Do</a>
+                    <a href="/page/insights.html" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 transition-colors">Insights</a>
+                    <a href="/page/portfolio.html" class="block px-3 py-2 text-gray-700 hover:text-indigo-600 transition-colors">Our Work</a>
+                    <a href="/page/contact.html" class="block px-3 py-2 text-white bg-gradient-to-r from-indigo-600 to-purple-600 rounded-md">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    </header>
+
+    <body>
+        <main class="min-h-screen">
+            <!-- Hero Section -->
+            <section class="bg-gradient-to-r from-[#050F55] to-[#1a2675] py-16 md:py-24">
+                <div class="container mx-auto px-4">
+                    <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 text-center">Insights & Innovation</h1>
+                    <p class="text-[#DEE0E8] text-lg md:text-xl text-center max-w-2xl mx-auto">Exploring the future of branding and creative solutions in Zimbabwe and beyond.</p>
+                </div>
+            </section>
+    
+            <!-- Featured Post -->
+            <section class="py-16 px-4">
+                <div class="container mx-auto max-w-6xl">
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <div class="md:flex">
+                            <div class="md:w-1/2">
+                                <img src="/Assets/images/How Effective Branding Drives Sales-01.png" alt="Featured blog post" class="w-full h-full object-cover"/>
+                            </div>
+                            <div class="md:w-1/2 p-8">
+                                <span class="text-[#EB871E] font-semibold">Featured Post</span>
+                                <h2 class="text-2xl md:text-5xl font-bold text-[#050F55] mt-2">How Effective Branding Drives Sales:</h2>
+                                <h4 class="text-2xl md:text-2xl font-semibold text-[#050F55] mt-2">Unveiling the Secrets Behind Compelling Brand Stories</h4>
+
+                                <p class="text-gray-600 mt-4">Effective branding is not merely an option; it is a necessity. As a design leader in Africa, we understand that branding transcends logos and slogans. It is about creating a unique identity that resonates with consumers, fosters loyalty, and ultimately drives sales. In this post, we will explore how compelling brand stories can elevate your brand's presence and significantly impact your sales performance.</p>
+                                
+                                <a href="/blog/How Effective Branding Drives Sales.html" target="_blank"><button class="mt-6 bg-[#EB871E] text-white px-6 py-2 rounded-full hover:bg-[#d47918] transition-colors">Read More</button> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Blog Grid -->
+            <section class="py-16 px-4 bg-[#DEE0E8]">
+                <div class="container mx-auto max-w-6xl">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Blog Post 1 -->
+                        <article class="blog-card bg-white rounded-xl overflow-hidden shadow-lg">
+                            <div class="overflow-hidden">
+                                <img src="/Assets/images/us_us-1.png" alt="Innovation blog" class="blog-image w-full h-48 object-cover"/>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-[#050F55]">Innovative Approaches to Brand Storytelling</h3>
+                                <p class="text-gray-600 mt-3">Discover how storytelling can transform your brand's connection with audiences through immersive experiences.</p>
+                                <a href="/blog/Innovative Approaches to Brand Storytelling.html" target="_blank">
+                                <button class="mt-4 text-[#EB871E] font-semibold hover:text-[#d47918]">Read Article →</button>
+                            </a>
+                            </div>
+                        </article>
+    
+                        <!-- Blog Post 2 -->
+                        <article class="blog-card bg-white rounded-xl overflow-hidden shadow-lg">
+                            <div class="overflow-hidden">
+                                <img src="/Assets/images/abs.jpg" alt="Branding blog" class="blog-image w-full h-48 object-cover"/>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-[#050F55]">Sustainable Branding: More Than Just a Trend</h3>
+                                <p class="text-gray-600 mt-3">How African businesses are incorporating sustainability into their brand identity and marketing strategies.</p>
+                                <a href="/blog/Sustainable Branding.html" target="_blank">
+                                <button class="mt-4 text-[#EB871E] font-semibold hover:text-[#d47918]">Read Article →</button>
+                                </a>
+                            </div>
+                        </article>
+    
+                        <!-- Blog Post 3 -->
+                        <article class="blog-card bg-white rounded-xl overflow-hidden shadow-lg">
+                            <div class="overflow-hidden">
+                                <img src="/Assets/images/TECHDIRV_webinars.png" alt="Technology blog" class="blog-image w-full h-48 object-cover"/>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold text-[#050F55]">Tech-Driven Brand Experiences</h3>
+                                <p class="text-gray-600 mt-3">. Our successful GoDigital Campaign exemplifies how strategic digital solutions can bridge the gap between technology and traditionally underserved markets.</p>
+                                <a href="/blog/Tech-Driven Brand Experience.html" target="_blank">
+                                    <button class="mt-4 text-[#EB871E] font-semibold hover:text-[#d47918]">Read Article →</button>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+    
+            <!-- Contact & Social Media Section -->
+            <section class="py-16 px-4">
+                <div class="container mx-auto max-w-4xl text-center">
+                    <div class="bg-gradient-to-r from-[#050F55] to-[#1a2675] rounded-2xl p-8 md:p-12">
+                        <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">Stay Connected</h2>
+                        <p class="text-[#DEE0E8] mb-6">Subscribe to our newsletter by sending an email to:</p>
+                        <a href="mailto:info@blacklemur.co.zw" class="text-[#EB871E] text-xl font-semibold hover:text-[#d47918] transition-colors">info@blacklemur.co.zw</a>
+                        
+                        <div class="mt-8">
+                            <p class="text-[#DEE0E8] mb-4">Follow us on social media:</p>
+                            <div class="flex justify-center gap-6">
+                                <a href="https://za.linkedin.com/company/blacklemurinnovations" target="_blank" class="social-icon text-white hover:text-[#EB871E]">
+                                    <i class="fab fa-linkedin fa-2x"></i>
+                                </a>
+                                <a href="https://web.facebook.com/blacklemurinnovation" target="_blank" class="social-icon text-white hover:text-[#EB871E]">
+                                    <i class="fab fa-facebook fa-2x"></i>
+                                </a>
+                                <a href="https://www.instagram.com/blacklemurinnovations" target="_blank" class="social-icon text-white hover:text-[#EB871E]">
+                                    <i class="fab fa-instagram fa-2x"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    
+    </body>
+    <footer class="bg-gray-900 text-white py-12 montserrat">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <div>
+                    <div class="text-2xl font-bold mb-6">About Us</div>
+                    <p class="text-gray-400">Our mission is to empower businesses by providing cutting-edge solutions in brand design, web and application development, marketing strategies, and data solutions.</p>
+                </div>
+                
+                <div>
+                    <h3 class="montserrat-alternates-bold text-2xl mb-6">Services</h3>
+                    <ul class="space-y-4 text-gray-400">
+                        <li><a href="/page/services.html" class="hover:text-white transition-colors">Brand Design</a></li>
+                        <li><a href="/page/services.html" class="hover:text-white transition-colors">Web Development</a></li>
+                        <li><a href="/page/services.html" class="hover:text-white transition-colors">Digital Marketing</a></li>
+                        <li><a href="/page/services.html" class="hover:text-white transition-colors">Data Solutions</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="montserrat-alternates-bold text-2xl mb-6">Company</h3>
+                    <ul class="space-y-4 text-gray-400">
+                        <li><a href="about us.html" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="/page/portfolio.html" class="hover:text-white transition-colors">Our Work</a></li>
+                        <li><a href="mailto:info@blacklemur.co.zw" class="hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="/page/contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="montserrat-alternates-bold  text-xl mb-6">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://web.facebook.com/blacklemurinnovation" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com/blacklemurs1" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/theblproject" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/theblproject" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-indigo-600 transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 BLacklemur Innovations. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+     <!-- Script Section -->
+ <script>
+  
+    // Initialize AOS
+    AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100
+    });
+
+    // Animate carousel
+    gsap.to(".animate-carousel", {
+        x: "-100%",
+        repeat: -1,
+        duration: 30,
+        ease: "linear"
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+<script>
+    // Initialize GSAP ScrollTrigger
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Animate blog cards on scroll
+    gsap.utils.toArray('.blog-card').forEach((card, i) => {
+        gsap.from(card, {
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: card,
+                start: 'top bottom-=100',
+                toggleActions: 'play none none reverse'
+            }
+        });
+    });
+</script>
+
+</html>

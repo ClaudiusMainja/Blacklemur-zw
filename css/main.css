@@ -137,3 +137,16 @@
     transform: translateY(20px);
     transition: all 0.3s ease-in-out;
 }
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+.blog-card:hover .blog-image {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+.social-icon {
+  transition: transform 0.3s ease;
+}
+.social-icon:hover {
+  transform: translateY(-3px);
+}
