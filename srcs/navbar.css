@@ -1,0 +1,57 @@
+.mega-menu {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+  }
+  
+  .group:hover .mega-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .service-item {
+    transition: all 0.3s ease;
+  }
+  
+  .service-item:hover {
+    background: linear-gradient(to right, rgba(79, 70, 229, 0.05), rgba(124, 58, 237, 0.05));
+    transform: translateX(5px);
+  }
+  
+  .nav-link-effect {
+    position: relative;
+  }
+  
+  .nav-link-effect::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background: linear-gradient(to right, #4f46e5, #7c3aed);
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link-effect:hover::after {
+    width: 100%;
+  }
+  
+  .mobile-nav-item {
+    transition: all 0.3s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.5s ease forwards;
+  }
+  
+  .dropdown-animation {
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
