@@ -1,0 +1,2308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Blacklemur Innovations - Top Creative Agency in Africa & USA. Expert brand design, digital marketing & web development services in USA, Zambia, Zimbabwe & South Africa.">
+    <title>Blacklemur Innovations | Social Media Marketing</title>
+
+    <!-- SEO meta tags -->
+    <meta name="keywords"
+        content="creative agency, brand design, web development, digital marketing, Africa creative agency, USA creative agency, Zimbabwe marketing, South Africa design, Zambia web development">
+    <meta name="author" content="Claudius Mainja">
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="US, ZA, ZM, ZW">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.theblproject.com">
+
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="en-us" href="https://www.theblproject.com">
+    <link rel="alternate" hreflang="en-za" href="https://www.blacklemur.co.za">
+    <link rel="alternate" hreflang="en-za" href="https://www.blacklemur.co.zw">
+
+    <!-- Open Graph tags for social sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.theblproject.com">
+    <meta property="og:site_name" content="Blacklemur Innovations">
+    <meta property="og:title" content="Blacklemur Innovations | Leading Creative Agency in Africa & USA">
+    <meta property="og:description"
+        content="Top creative agency delivering innovative solutions for forward-thinking brands across USA, Zambia, Zimbabwe & South Africa.">
+    <meta property="article:author" content="Claudius Mainja- Product and Brand Designer/Web Developer">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Blacklemur Innovations | Leading Creative Agency in Africa & USA">
+    <meta name="twitter:description"
+        content="Zimbabwe's premier creative agency delivering innovative solutions for forward-thinking brands.">
+
+    <!-- Structured data for rich snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Blacklemur Innovations",
+      "description": "Leading creative agency delivering innovative solutions for forward-thinking brands across USA, Zambia, Zimbabwe & South Africa.",
+      "url": "https://www.theblproject.com",
+      "sameAs": ["https://www.blacklemur.co.za"],
+      "founder": {
+        "@type": "Person",
+        "name": "Claudius Mainja",
+        "url": "https://www.claudius-mainja.com"
+      },
+      "areaServed": ["USA", "South Africa", "Zimbabwe", "Zambia"],
+      "serviceType": ["Brand Design", "Web Development", "Digital Marketing", "Creative Solutions"]
+    }
+    </script>
+
+    <link rel="icon" type="image/x-icon" href="/Assets/images/icon.jpeg">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.2/alpine.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/srcs/navbar.css">
+    <link rel="stylesheet" href="/srcs/about.css">
+    <link rel="stylesheet" href="/srcs/marketing.css">
+
+</head>
+
+<body class="overflow-x-hidden bg-slate-100 text-violet-800 dark:bg-gradient-to-tr from-indigo-800 to-violet-600 dark:text:white text-lg">
+  
+<header>
+    <!-- Navbar Section -->
+    <nav x-data="{ 
+      isOpen: false, 
+      atTop: true, 
+      digitalMarketingOpen: false,
+      webAppOpen: false,
+      virtualSupportOpen: false,
+      aboutOpen: false,
+      mobileSubmenuOpen: null
+    }" @scroll.window="atTop = (window.pageYOffset > 50) ? false : true"
+        :class="{'py-2 bg-white/95 shadow-lg': !atTop, 'py-4 bg-white/90': atTop}"
+        class="fixed w-full z-50 backdrop-blur-md transition-all duration-500">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 container ">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="/index.html"
+                        class="flex items-center transform hover:scale-105 transition-all duration-300">
+                        <img src="/Assets/images/Main Logo_Main 1.png" alt="Blacklemur Innovations" class="h-12 w-auto">
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center space-x-1">
+                    <!-- Home Link -->
+                    <a href="/index.html"
+                        class="px-3 py-2 text-indigo-800 hover:text-indigo-600 font-medium nav-link-effect">
+
+                    </a>
+
+                    <!-- Digital Marketing Services Dropdown -->
+                    <div class="relative group">
+                        <button
+                            class="px-3 py-2 text-indigo-800 hover:text-indigo-600 font-medium flex items-center space-x-1 nav-link-effect">
+                            <span>Digital Marketing</span>
+                            <svg class="w-4 h-4 group-hover:rotate-180 transition-transform duration-300" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+
+                        <!-- Digital Marketing Mega Menu -->
+                        <div
+                            class="mega-menu absolute left-0 mt-2 w-screen max-w-4xl bg-white rounded-lg shadow-xl p-6 grid grid-cols-5 gap-6">
+                            <!-- Services Column -->
+                            <div class="col-span-3 grid grid-cols-2 gap-4">
+                                <div>
+                                    <h3 class="text-indigo-800 font-semibold mb-3 border-b border-indigo-100 pb-2">
+                                        Services</h3>
+                                    <ul class="space-y-2">
+                                        <li>
+                                            <a href="/services/social-media-marketing.html"
+                                                class="service-item block p-2 rounded-lg hover:text-indigo-600">
+                                                <div class="flex items-center">
+                                                    <i class="fas fa-hashtag text-indigo-500 mr-2"></i>
+                                                    <span>Social Media Marketing</span>
+                                                </div>
+                                                <p class="text-xs text-gray-500 mt-1 pl-6">Strategic engagement
+                                                    across platforms</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/content-creation.html"
+                                                class="service-item block p-2 rounded-lg hover:text-indigo-600">
+                                                <div class="flex items-center">
+                                                    <i class="fas fa-pen-fancy text-indigo-500 mr-2"></i>
+                                                    <span>Content Creation</span>
+                                                </div>
+                                                <p class="text-xs text-gray-500 mt-1 pl-6">Compelling visuals and
+                                                    copy</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/graphic-design.html"
+                                                class="service-item block p-2 rounded-lg hover:text-indigo-600">
+                                                <div class="flex items-center">
+                                                    <i class="fas fa-palette text-indigo-500 mr-2"></i>
+                                                    <span>Graphic Design & Copywriting</span>
+                                                </div>
+                                                <p class="text-xs text-gray-500 mt-1 pl-6">Visually appealing
+                                                    designs with powerful messaging</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/social-strategy.html"
+                                                class="service-item block p-2 rounded-lg hover:text-indigo-600">
+                                                <div class="flex items-center">
+                                                    <i class="fas fa-chess text-indigo-500 mr-2"></i>
+                                                    <span>Social Media Strategy</span>
+                                                </div>
+                                                <p class="text-xs text-gray-500 mt-1 pl-6">Data-driven planning for
+                                                    growth</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="text-transparent mb-3 border-b border-transparent pb-2">.</h3>
+                                    <ul class="space-y-2">
+                                        <li>
+                                            <a href="/services/community-management.html"
+                                                class="service-item block p-2 rounded-lg hover:text-indigo-600">
+                                                <div class="flex items-center">
+                                                    <i class="fas fa-users text-indigo-500 mr-2"></i>
+                                                    <span>Community Management</span>
+                                                </div>
+                                                <p class="text-xs text-gray-500 mt-1 pl-6">Building engaged
+                                                    audiences</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/paid-advertising.html"
+                                                class="service-item block p-2 rounded-lg hover:text-indigo-600">
+                                                <div class="flex items-center">
+                                                    <i class="fas fa-ad text-indigo-500 mr-2"></i>
+                                                    <span>Paid Advertising</span>
+                                                </div>
+                                                <p class="text-xs text-gray-500 mt-1 pl-6">Targeted campaigns for
+                                                    maximum ROI</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/email-marketing.html"
+                                                class="service-item block p-2 rounded-lg hover:text-indigo-600">
+                                                <div class="flex items-center">
+                                                    <i class="fas fa-envelope text-indigo-500 mr-2"></i>
+                                                    <span>Email Marketing & Nurturing</span>
+                                                </div>
+                                                <p class="text-xs text-gray-500 mt-1 pl-6">Converting leads into
+                                                    customers</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/seo.html"
+                                                class="service-item block p-2 rounded-lg hover:text-indigo-600">
+                                                <div class="flex items-center">
+                                                    <i class="fas fa-search text-indigo-500 mr-2"></i>
+                                                    <span>Search Engine Optimization</span>
+                                                </div>
+                                                <p class="text-xs text-gray-500 mt-1 pl-6">Improve visibility and
+                                                    rankings</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Portfolio Column -->
+                            <div class="col-span-2 pl-4 border-l border-indigo-100">
+                                <h3 class="text-indigo-800 font-semibold mb-3 border-b border-indigo-100 pb-2">
+                                    Featured Work</h3>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="overflow-hidden rounded-lg group">
+                                        <img src="/Assets/images/social media marketing.png"
+                                            alt="Digital Marketing Portfolio"
+                                            class="w-full h-24 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                                        <p class="text-xs font-medium mt-1 text-gray-700">Classic Reinsurance
+                                            Brokers Social Media Campaign</p>
+                                    </div>
+                                    <div class="overflow-hidden rounded-lg group">
+                                        <img src="/Assets/images/email marketing.png" alt="Digital Marketing Portfolio"
+                                            class="w-full h-24 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                                        <p class="text-xs font-medium mt-1 text-gray-700">7 Arts Theatre Email
+                                            Marketing Results</p>
+                                    </div>
+                                </div>
+                                <a href="/page/portfolio.html"
+                                    class="mt-4 inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-800 group">
+                                    <span>View Digital Marketing Portfolio</span>
+                                    <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Web Application Services Dropdown -->
+                    <div class="relative group">
+                        <button
+                            class="px-3 py-2 text-indigo-800 hover:text-indigo-600 font-medium flex items-center space-x-1 nav-link-effect">
+                            <span>Web Development</span>
+                            <svg class="w-4 h-4 group-hover:rotate-180 transition-transform duration-300" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+
+                        <!-- Web Application Mega Menu -->
+                        <div
+                            class="mega-menu absolute left-0 mt-2 w-screen max-w-4xl bg-white rounded-lg shadow-xl p-6 grid grid-cols-5 gap-6">
+                            <!-- Services Column -->
+                            <div class="col-span-3 grid grid-cols-2 gap-4">
+                                <div>
+                                    <h3 class="text-indigo-800 font-semibold mb-3 border-b border-indigo-100 pb-2">
+                                        Services</h3>
+                                    <ul class="space-y-2">
+                                        <li>
+                                            <a href="/services/uiux-design.html"
+                                                class="service-item block p-2 rounded-lg hover:text-indigo-600">
+                                                <div class="flex items-center">
+                                                    <i class="fa-solid fa-object-ungroup text-indigo-500 mr-2"></i>
+                                                    <span>UI/UX Design </span>
+                                                </div>
+                                                <p class="text-xs text-gray-500 mt-1 pl-6">Design systems and
+                                                    prototypes</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/website-development.html"
+                                                class="service-item block p-2 rounded-lg hover:text-indigo-600">
+                                                <div class="flex items-center">
+                                                    <i class="fas fa-laptop-code text-indigo-500 mr-2"></i>
+                                                    <span>Website Design & Development</span>
+                                                </div>
+                                                <p class="text-xs text-gray-500 mt-1 pl-6">Custom responsive
+                                                    websites</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/app-development.html"
+                                                class="service-item block p-2 rounded-lg hover:text-indigo-600">
+                                                <div class="flex items-center">
+                                                    <i class="fas fa-mobile-alt text-indigo-500 mr-2"></i>
+                                                    <span>Application Design & Development</span>
+                                                </div>
+                                                <p class="text-xs text-gray-500 mt-1 pl-6">Cross-platform app
+                                                    solutions</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/ecommerce.html"
+                                                class="service-item block p-2 rounded-lg hover:text-indigo-600">
+                                                <div class="flex items-center">
+                                                    <i class="fas fa-shopping-cart text-indigo-500 mr-2"></i>
+                                                    <span>Online Shopping & Reservations</span>
+                                                </div>
+                                                <p class="text-xs text-gray-500 mt-1 pl-6">E-commerce and booking
+                                                    solutions</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="text-transparent mb-3 border-b border-transparent pb-2">.</h3>
+                                    <ul class="space-y-2">
+                                        <li>
+                                            <a href="/services/customer-support.html"
+                                                class="service-item block p-2 rounded-lg hover:text-indigo-600">
+                                                <div class="flex items-center">
+                                                    <i class="fas fa-headset text-indigo-500 mr-2"></i>
+                                                    <span>Customer Support & Live Chat</span>
+                                                </div>
+                                                <p class="text-xs text-gray-500 mt-1 pl-6">24/7 customer service
+                                                    solutions</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/scheduling.html"
+                                                class="service-item block p-2 rounded-lg hover:text-indigo-600">
+                                                <div class="flex items-center">
+                                                    <i class="fas fa-calendar-alt text-indigo-500 mr-2"></i>
+                                                    <span>Calendar & Appointment Systems</span>
+                                                </div>
+                                                <p class="text-xs text-gray-500 mt-1 pl-6">Streamlined scheduling
+                                                    solutions</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Portfolio Column -->
+                            <div class="col-span-2 pl-4 border-l border-indigo-100">
+                                <h3 class="text-indigo-800 font-semibold mb-3 border-b border-indigo-100 pb-2">
+                                    Featured Work</h3>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="overflow-hidden rounded-lg group">
+                                        <img src="/Assets/images/7artstheatre.png" alt="Web Application Portfolio"
+                                            class="w-full h-24 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                                        <p class="text-xs font-medium mt-1 text-gray-700">Ticketing system plus a
+                                            Website</p>
+                                    </div>
+                                    <div class="overflow-hidden rounded-lg group">
+                                        <img src="/Assets/images/natureextent.png" alt="Web Application Portfolio"
+                                            class="w-full h-24 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                                        <p class="text-xs font-medium mt-1 text-gray-700">Educational website design
+                                            + branding </p>
+                                    </div>
+                                </div>
+                                <a href="/page/portfolio.html"
+                                    class="mt-4 inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-800 group">
+                                    <span>View Web Applications Portfolio</span>
+                                    <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Virtual Business Support Dropdown -->
+                    <div class="relative group">
+                        <button
+                            class="px-3 py-2 text-indigo-800 hover:text-indigo-600 font-medium flex items-center space-x-1 nav-link-effect">
+                            <span>Virtual Support</span>
+                            <svg class="w-4 h-4 group-hover:rotate-180 transition-transform duration-300" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+
+                        <!-- Virtual Support Mega Menu -->
+                        <div
+                            class="mega-menu absolute left-0 mt-2 w-screen max-w-4xl bg-white rounded-lg shadow-xl p-6 grid grid-cols-5 gap-6">
+                            <!-- Services Column -->
+                            <div class="col-span-3 grid grid-cols-2 gap-4">
+                                <div>
+                                    <h3 class="text-indigo-800 font-semibold mb-3 border-b border-indigo-100 pb-2">
+                                        Services</h3>
+                                    <ul class="space-y-2">
+                                        <li>
+                                            <a href="/services/bookkeeping.html"
+                                                class="service-item block p-2 rounded-lg hover:text-indigo-600">
+                                                <div class="flex items-center">
+                                                    <i class="fas fa-calculator text-indigo-500 mr-2"></i>
+                                                    <span>Bookkeeping & Accounting Support</span>
+                                                </div>
+                                                <p class="text-xs text-gray-500 mt-1 pl-6">Financial management
+                                                    assistance</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/data-solutions.html "
+                                                class="service-item block p-2 rounded-lg hover:text-indigo-600">
+                                                <div class="flex items-center">
+                                                    <i class="fas fa-inbox text-indigo-500 mr-2"></i>
+                                                    <span>Data Solutions</span>
+                                                </div>
+                                                <p class="text-xs text-gray-500 mt-1 pl-6">Organized communication
+                                                    systems</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/travel-planning.html"
+                                                class="service-item block p-2 rounded-lg hover:text-indigo-600">
+                                                <div class="flex items-center">
+                                                    <i class="fas fa-plane text-indigo-500 mr-2"></i>
+                                                    <span>Travel & Itinerary Planning</span>
+                                                </div>
+                                                <p class="text-xs text-gray-500 mt-1 pl-6">Streamlined travel
+                                                    arrangements</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="text-transparent mb-3 border-b border-transparent pb-2">.</h3>
+                                    <ul class="space-y-2">
+                                        <li>
+                                            <a href="/services/data-entry.html"
+                                                class="service-item block p-2 rounded-lg hover:text-indigo-600">
+                                                <div class="flex items-center">
+                                                    <i class="fas fa-database text-indigo-500 mr-2"></i>
+                                                    <span>Data Entry & Database Management</span>
+                                                </div>
+                                                <p class="text-xs text-gray-500 mt-1 pl-6">Efficient data processing
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/research.html"
+                                                class="service-item block p-2 rounded-lg hover:text-indigo-600">
+                                                <div class="flex items-center">
+                                                    <i class="fas fa-search-dollar text-indigo-500 mr-2"></i>
+                                                    <span>Research & Market Analysis</span>
+                                                </div>
+                                                <p class="text-xs text-gray-500 mt-1 pl-6">In-depth competitive
+                                                    insights</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Portfolio Column -->
+                            <div class="col-span-2 pl-4 border-l border-indigo-100">
+                                <h3 class="text-indigo-800 font-semibold mb-3 border-b border-indigo-100 pb-2">
+                                    Featured Work</h3>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="overflow-hidden rounded-lg group">
+                                        <img src="/Assets/images/Data solution.png " alt="Virtual Support Portfolio"
+                                            class="w-full h-24 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                                        <p class="text-xs font-medium mt-1 text-gray-700">Data Solutions</p>
+                                    </div>
+                                    <div class="overflow-hidden rounded-lg group">
+                                        <img src="/Assets/images/market research.png" alt="Virtual Support Portfolio"
+                                            class="w-full h-24 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                                        <p class="text-xs font-medium mt-1 text-gray-700">Market Research Analysis
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="/page/portfolio.html"
+                                    class="mt-4 inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-800 group">
+                                    <span>View Virtual Support Portfolio</span>
+                                    <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Data Solutions Services Dropdown -->
+                    <div class="relative group">
+                        <button
+                            class="px-3 py-2 text-indigo-800 hover:text-indigo-600 font-medium flex items-center space-x-1 nav-link-effect">
+                            <span>Data Solution</span>
+                            <svg class="w-4 h-4 group-hover:rotate-180 transition-transform duration-300" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+
+                        <!-- Data Solutions Mega Menu -->
+                        <div
+                            class="mega-menu absolute right-0 mt-2 w-screen max-w-4xl bg-white rounded-lg shadow-xl p-6 grid grid-cols-5 gap-6">
+                            <!-- Services Column -->
+                            <div class="col-span-3 grid grid-cols-2 gap-4">
+                                <div>
+                                    <h3 class="text-indigo-800 font-semibold mb-3 border-b border-indigo-100 pb-2">
+                                        Services</h3>
+                                    <ul class="space-y-2">
+                                        <li>
+                                            <a href="/services/data-analytics.html"
+                                                class="service-item block p-2 rounded-lg hover:text-indigo-600">
+                                                <div class="flex items-center">
+                                                    <i class="fas fa-chart-line text-indigo-500 mr-2"></i>
+                                                    <span>Data Analytics & Business Intelligence</span>
+                                                </div>
+                                                <p class="text-xs text-gray-500 mt-1 pl-6">For smarter decision-making
+                                                    and brand visibility</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/data-management.html"
+                                                class="service-item block p-2 rounded-lg hover:text-indigo-600">
+                                                <div class="flex items-center">
+                                                    <i class="fas fa-database text-indigo-500 mr-2"></i>
+                                                    <span>Data Management Services</span>
+                                                </div>
+                                                <p class="text-xs text-gray-500 mt-1 pl-6">For organized, accurate, and
+                                                    accessible data</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/predictive-insights.html"
+                                                class="service-item block p-2 rounded-lg hover:text-indigo-600">
+                                                <div class="flex items-center">
+                                                    <i class="fas fa-lightbulb text-indigo-500 mr-2"></i>
+                                                    <span>Predictive & Market Insights</span>
+                                                </div>
+                                                <p class="text-xs text-gray-500 mt-1 pl-6">For forecasting trends and
+                                                    understanding audience behavior</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="text-transparent mb-3 border-b border-transparent pb-2">.</h3>
+                                    <ul class="space-y-2">
+                                        <li>
+                                            <a href="/services/big-data-support.html"
+                                                class="service-item block p-2 rounded-lg hover:text-indigo-600">
+                                                <div class="flex items-center">
+                                                    <i class="fas fa-server text-indigo-500 mr-2"></i>
+                                                    <span>Big Data Support</span>
+                                                </div>
+                                                <p class="text-xs text-gray-500 mt-1 pl-6">For scaling data operations
+                                                    as your business grows</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/data-security.html"
+                                                class="service-item block p-2 rounded-lg hover:text-indigo-600">
+                                                <div class="flex items-center">
+                                                    <i class="fas fa-shield-alt text-indigo-500 mr-2"></i>
+                                                    <span>Data Security & Compliance</span>
+                                                </div>
+                                                <p class="text-xs text-gray-500 mt-1 pl-6">For protecting customer trust
+                                                    and brand reputation</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/services/research-reporting.html"
+                                                class="service-item block p-2 rounded-lg hover:text-indigo-600">
+                                                <div class="flex items-center">
+                                                    <i class="fas fa-file-alt text-indigo-500 mr-2"></i>
+                                                    <span>Research & Reporting</span>
+                                                </div>
+                                                <p class="text-xs text-gray-500 mt-1 pl-6">For business plans,
+                                                    campaigns, and funding support</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- Portfolio Column -->
+                            <div class="col-span-2 pl-4 border-l border-indigo-100">
+                                <h3 class="text-indigo-800 font-semibold mb-3 border-b border-indigo-100 pb-2">
+                                    Featured Work</h3>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="overflow-hidden rounded-lg group">
+                                        <img src="/Assets/images/data-analytics.png" alt="Data Analytics Portfolio"
+                                            class="w-full h-24 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                                        <p class="text-xs font-medium mt-1 text-gray-700">Financial Services Data
+                                            Dashboard</p>
+                                    </div>
+                                    <div class="overflow-hidden rounded-lg group">
+                                        <img src="/Assets/images/business-intelligence.png"
+                                            alt="Business Intelligence Portfolio"
+                                            class="w-full h-24 object-cover transform group-hover:scale-110 transition-transform duration-500">
+                                        <p class="text-xs font-medium mt-1 text-gray-700">Retail Market Analysis Report
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="/page/data-portfolio.html"
+                                    class="mt-4 inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-800 group">
+                                    <span>View Data Solutions Portfolio</span>
+                                    <svg class="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none"
+                                        stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- About Company Dropdown -->
+                    <div class="relative group">
+                        <button
+                            class="px-3 py-2 text-indigo-800 hover:text-indigo-600 font-medium flex items-center space-x-1 nav-link-effect">
+                            <span>Company</span>
+                            <svg class="w-4 h-4 group-hover:rotate-180 transition-transform duration-300" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+
+                        <!-- About Dropdown Menu -->
+                        <div class="mega-menu absolute right-0 mt-2 w-64 bg-white rounded-lg shadow-xl overflow-hidden">
+                            <a href="/page/about-us.html"
+                                class="block px-4 py-3 text-gray-800 hover:bg-indigo-50 hover:text-indigo-600 border-l-2 border-transparent hover:border-indigo-500 transition-all duration-300">
+                                <div class="flex items-center">
+                                    <i class="fas fa-building text-indigo-500 mr-2"></i>
+                                    <span>Who We Are</span>
+                                </div>
+                            </a>
+                            <a href="/page/careers.html"
+                                class="block px-4 py-3 text-gray-800 hover:bg-indigo-50 hover:text-indigo-600 border-l-2 border-transparent hover:border-indigo-500 transition-all duration-300">
+                                <div class="flex items-center">
+                                    <i class="fas fa-briefcase text-indigo-500 mr-2"></i>
+                                    <span>Careers</span>
+                                </div>
+                            </a>
+
+
+                            <!-- Insights Link -->
+                            <a href="/page/insights.html"
+                                class="block px-4 py-3 text-gray-800 hover:bg-indigo-50 hover:text-indigo-600 border-l-2 border-transparent hover:border-indigo-500 transition-all duration-300">
+                                <div>
+                                    <i class="fa-solid fa-newspaper text-indigo-500 mr-2"></i>
+                                    <span>Insights</span>
+                                </div>
+                            </a>
+
+                            <!-- Our Work Link -->
+                            <a href="/page/portfolio.html"
+                                class="block px-4 py-3 text-gray-800 hover:bg-indigo-50 hover:text-indigo-600 border-l-2 border-transparent hover:border-indigo-500 transition-all duration-300">
+                                <div>
+                                    <i class="fa-solid fa-diagram-project text-indigo-500 mr-2"></i>
+                                    <span>Our Work</span>
+                                </div>
+                            </a>
+                            <a href="/page/contact.html"
+                                class="block px-4 py-3 text-gray-800 hover:bg-indigo-50 hover:text-indigo-600 border-l-2 border-transparent hover:border-indigo-500 transition-all duration-300">
+                                <div class="flex items-center">
+                                    <i class="fas fa-phone text-indigo-500 mr-2"></i>
+                                    <span>Contact Us</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Get Started Button -->
+                    <a href="/page/inquiry.html"
+                        class="ml-3 px-6 py-2 text-white font-medium bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full hover:shadow-lg transition duration-300 transform hover:-translate-y-1 hover:scale-105 flex items-center">
+                        <span>Ask for a Quote</span>
+                        <svg class="w-4 h-4 ml-2 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="lg:hidden flex items-center">
+                    <button @click="isOpen = !isOpen"
+                        class="text-indigo-800 hover:text-indigo-600 focus:outline-none transition-all duration-300 transform hover:scale-110"
+                        aria-label="Toggle menu">
+                        <svg x-show="!isOpen" class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                        <svg x-show="isOpen" class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            style="display: none;">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div x-show="isOpen" x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0 transform -translate-y-2"
+            x-transition:enter-end="opacity-100 transform translate-y-0"
+            x-transition:leave="transition ease-in duration-300"
+            x-transition:leave-start="opacity-100 transform translate-y-0"
+            x-transition:leave-end="opacity-0 transform -translate-y-2"
+            class="lg:hidden bg-white shadow-xl rounded-b-2xl" style="display: none;">
+            <div class="px-4 pt-2 pb-5 space-y-1">
+                <a href="/index.html"
+                    class="mobile-nav-item block px-3 py-3 text-gray-800 hover:bg-indigo-50 rounded-lg hover:text-indigo-600 font-medium border-l-2 border-transparent hover:border-indigo-500">
+                    Home
+                </a>
+
+                <!-- Mobile Digital Marketing Dropdown -->
+                <div class="mobile-nav-item">
+                    <button
+                        @click="mobileSubmenuOpen = mobileSubmenuOpen === 'digitalMarketing' ? null : 'digitalMarketing'"
+                        class="w-full flex justify-between items-center px-3 py-3 text-gray-800 hover:bg-indigo-50 rounded-lg font-medium border-l-2 border-transparent hover:border-indigo-500">
+                        <span>Digital Marketing</span>
+                        <svg :class="{'rotate-180': mobileSubmenuOpen === 'digitalMarketing'}"
+                            class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+
+                    <!-- Mobile Digital Marketing Submenu -->
+                    <div x-show="mobileSubmenuOpen === 'digitalMarketing'"
+                        x-transition:enter="transition ease-out duration-200"
+                        x-transition:enter-start="opacity-0 transform scale-95"
+                        x-transition:enter-end="opacity-100 transform scale-100"
+                        x-transition:leave="transition ease-in duration-150"
+                        x-transition:leave-start="opacity-100 transform scale-100"
+                        x-transition:leave-end="opacity-0 transform scale-95" class="ml-4 mt-1 mb-2 space-y-1"
+                        style="display: none;">
+                        <a href="/services/social-media-marketing.html"
+                            class="block px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 text-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-hashtag text-indigo-500 mr-2"></i>
+                                <span>Social Media Marketing</span>
+                            </div>
+                        </a>
+                        <a href="/services/content-creation.html"
+                            class="block px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 text-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-pen-fancy text-indigo-500 mr-2"></i>
+                                <span>Content Creation</span>
+                            </div>
+                        </a>
+                        <a href="/services/graphic-design.html"
+                            class="block px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 text-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-palette text-indigo-500 mr-2"></i>
+                                <span>Graphic Design & Copywriting</span>
+                            </div>
+                        </a>
+                        <a href="/services/social-strategy.html"
+                            class="block px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 text-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-chess text-indigo-500 mr-2"></i>
+                                <span>Social Media Strategy</span>
+                            </div>
+                        </a>
+                        <a href="/services/community-management.html"
+                            class="block px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 text-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-users text-indigo-500 mr-2"></i>
+                                <span>Community Management</span>
+                            </div>
+                        </a>
+                        <a href="/services/paid-advertising.html"
+                            class="block px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 text-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-ad text-indigo-500 mr-2"></i>
+                                <span>Paid Advertising</span>
+                            </div>
+                        </a>
+                        <a href="/services/email-marketing.html"
+                            class="block px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 text-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope text-indigo-500 mr-2"></i>
+                                <span>Email Marketing & Nurturing</span>
+                            </div>
+                        </a>
+                        <a href="/services/seo.html"
+                            class="block px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 text-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-search text-indigo-500 mr-2"></i>
+                                <span>Search Engine Optimization</span>
+                            </div>
+                        </a>
+                        <a href="/portfolio/digital-marketing.html"
+                            class="block px-3 py-2 rounded-md text-indigo-600 hover:bg-indigo-50 text-sm font-medium">
+                            <div class="flex items-center">
+                                <i class="fas fa-images text-indigo-500 mr-2"></i>
+                                <span>View Portfolio</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile Web Applications Dropdown -->
+                <div class="mobile-nav-item">
+                    <button @click="mobileSubmenuOpen = mobileSubmenuOpen === 'webApps' ? null : 'webApps'"
+                        class="w-full flex justify-between items-center px-3 py-3 text-gray-800 hover:bg-indigo-50 rounded-lg font-medium border-l-2 border-transparent hover:border-indigo-500">
+                        <span>Web Applications</span>
+                        <svg :class="{'rotate-180': mobileSubmenuOpen === 'webApps'}"
+                            class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+
+                    <!-- Mobile Web Applications Submenu -->
+                    <div x-show="mobileSubmenuOpen === 'webApps'" x-transition:enter="transition ease-out duration-200"
+                        x-transition:enter-start="opacity-0 transform scale-95"
+                        x-transition:enter-end="opacity-100 transform scale-100"
+                        x-transition:leave="transition ease-in duration-150"
+                        x-transition:leave-start="opacity-100 transform scale-100"
+                        x-transition:leave-end="opacity-0 transform scale-95" class="ml-4 mt-1 mb-2 space-y-1"
+                        style="display: none;">
+                        <a href="/services/uiux-design.html "
+                            class="block px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 text-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-laptop-code text-indigo-500 mr-2"></i>
+                                <span>UIUX Design</span>
+                            </div>
+                        </a>
+                        <a href="/services/website-development.html"
+                            class="block px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 text-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-laptop-code text-indigo-500 mr-2"></i>
+                                <span>Website Design & Development</span>
+                            </div>
+                        </a>
+                        <a href="/services/app-development.html"
+                            class="block px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 text-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-mobile-alt text-indigo-500 mr-2"></i>
+                                <span>Application Design & Development</span>
+                            </div>
+                        </a>
+                        <a href="/services/ecommerce.html"
+                            class="block px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 text-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-shopping-cart text-indigo-500 mr-2"></i>
+                                <span>Online Shopping & Reservations</span>
+                            </div>
+                        </a>
+                        <a href="/services/customer-support.html"
+                            class="block px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 text-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-headset text-indigo-500 mr-2"></i>
+                                <span>Customer Support & Live Chat</span>
+                            </div>
+                        </a>
+                        <a href="/services/scheduling.html"
+                            class="block px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 text-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-calendar-alt text-indigo-500 mr-2"></i>
+                                <span>Calendar & Appointment Systems</span>
+                            </div>
+                        </a>
+                        <a href="/portfolio/web-applications.html"
+                            class="block px-3 py-2 rounded-md text-indigo-600 hover:bg-indigo-50 text-sm font-medium">
+                            <div class="flex items-center">
+                                <i class="fas fa-images text-indigo-500 mr-2"></i>
+                                <span>View Portfolio</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile Virtual Support Dropdown -->
+                <div class="mobile-nav-item">
+                    <button
+                        @click="mobileSubmenuOpen = mobileSubmenuOpen === 'virtualSupport' ? null : 'virtualSupport'"
+                        class="w-full flex justify-between items-center px-3 py-3 text-gray-800 hover:bg-indigo-50 rounded-lg font-medium border-l-2 border-transparent hover:border-indigo-500">
+                        <span>Virtual Support</span>
+                        <svg :class="{'rotate-180': mobileSubmenuOpen === 'virtualSupport'}"
+                            class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+
+                    <!-- Mobile Virtual Support Submenu -->
+                    <div x-show="mobileSubmenuOpen === 'virtualSupport'"
+                        x-transition:enter="transition ease-out duration-200"
+                        x-transition:enter-start="opacity-0 transform scale-95"
+                        x-transition:enter-end="opacity-100 transform scale-100"
+                        x-transition:leave="transition ease-in duration-150"
+                        x-transition:leave-start="opacity-100 transform scale-100"
+                        x-transition:leave-end="opacity-0 transform scale-95" class="ml-4 mt-1 mb-2 space-y-1"
+                        style="display: none;">
+                        <a href="/services/bookkeeping.html"
+                            class="block px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 text-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-calculator text-indigo-500 mr-2"></i>
+                                <span>Bookkeeping & Accounting Support</span>
+                            </div>
+                        </a>
+                        <a href="/services/data-solutions.html"
+                            class="block px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 text-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-inbox text-indigo-500 mr-2"></i>
+                                <span>Data Solutions</span>
+                            </div>
+                        </a>
+                        <a href="/services/travel-planning.html"
+                            class="block px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 text-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-plane text-indigo-500 mr-2"></i>
+                                <span>Travel & Itinerary Planning</span>
+                            </div>
+                        </a>
+                        <a href="/services/data-entry.html"
+                            class="block px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 text-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-database text-indigo-500 mr-2"></i>
+                                <span>Data Entry & Database Management</span>
+                            </div>
+                        </a>
+                        <a href="/services/research.html"
+                            class="block px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 text-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-search-dollar text-indigo-500 mr-2"></i>
+                                <span>Research & Market Analysis</span>
+                            </div>
+                        </a>
+                        <a href="/portfolio/virtual-support.html"
+                            class="block px-3 py-2 rounded-md text-indigo-600 hover:bg-indigo-50 text-sm font-medium">
+                            <div class="flex items-center">
+                                <i class="fas fa-images text-indigo-500 mr-2"></i>
+                                <span>View Portfolio</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile Data Solutions Dropdown -->
+                <div class="mobile-nav-item">
+                    <button @click="mobileSubmenuOpen = mobileSubmenuOpen === 'dataSolutions' ? null : 'dataSolutions'"
+                        class="w-full flex justify-between items-center px-3 py-3 text-gray-800 hover:bg-indigo-50 rounded-lg font-medium border-l-2 border-transparent hover:border-indigo-500">
+                        <span>Data Solution</span>
+                        <svg :class="{'rotate-180': mobileSubmenuOpen === 'dataSolutions'}"
+                            class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+
+                    <!-- Mobile Data Solutions Submenu -->
+                    <div x-show="mobileSubmenuOpen === 'dataSolutions'"
+                        x-transition:enter="transition ease-out duration-200"
+                        x-transition:enter-start="opacity-0 transform scale-95"
+                        x-transition:enter-end="opacity-100 transform scale-100"
+                        x-transition:leave="transition ease-in duration-150"
+                        x-transition:leave-start="opacity-100 transform scale-100"
+                        x-transition:leave-end="opacity-0 transform scale-95" class="ml-4 mt-1 mb-2 space-y-1"
+                        style="display: none;">
+                        <a href="/services/data-analytics.html"
+                            class="block px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 text-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-chart-line text-indigo-500 mr-2"></i>
+                                <span>Data Analytics & Business Intelligence</span>
+                            </div>
+                        </a>
+                        <a href="/services/data-management.html"
+                            class="block px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 text-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-database text-indigo-500 mr-2"></i>
+                                <span>Data Management Services</span>
+                            </div>
+                        </a>
+                        <a href="/services/predictive-insights.html"
+                            class="block px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 text-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-lightbulb text-indigo-500 mr-2"></i>
+                                <span>Predictive & Market Insights</span>
+                            </div>
+                        </a>
+                        <a href="/services/big-data-support.html"
+                            class="block px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 text-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-server text-indigo-500 mr-2"></i>
+                                <span>Big Data Support</span>
+                            </div>
+                        </a>
+                        <a href="/services/data-security.html"
+                            class="block px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 text-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-shield-alt text-indigo-500 mr-2"></i>
+                                <span>Data Security & Compliance</span>
+                            </div>
+                        </a>
+                        <a href="/services/research-reporting.html"
+                            class="block px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 text-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-file-alt text-indigo-500 mr-2"></i>
+                                <span>Research & Reporting</span>
+                            </div>
+                        </a>
+                        <a href="/portfolio/data-solutions.html"
+                            class="block px-3 py-2 rounded-md text-indigo-600 hover:bg-indigo-50 text-sm font-medium">
+                            <div class="flex items-center">
+                                <i class="fas fa-images text-indigo-500 mr-2"></i>
+                                <span>View Portfolio</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <a href="/page/insights.html"
+                    class="mobile-nav-item block px-3 py-3 text-gray-800 hover:bg-indigo-50 rounded-lg hover:text-indigo-600 font-medium border-l-2 border-transparent hover:border-indigo-500">
+                    Insights
+                </a>
+
+                <a href="/page/portfolio.html"
+                    class="mobile-nav-item block px-3 py-3 text-gray-800 hover:bg-indigo-50 rounded-lg hover:text-indigo-600 font-medium border-l-2 border-transparent hover:border-indigo-500">
+                    Our Work
+                </a>
+
+                <!-- Mobile About Company Dropdown -->
+                <div class="mobile-nav-item">
+                    <button @click="mobileSubmenuOpen = mobileSubmenuOpen === 'about' ? null : 'about'"
+                        class="w-full flex justify-between items-center px-3 py-3 text-gray-800 hover:bg-indigo-50 rounded-lg font-medium border-l-2 border-transparent hover:border-indigo-500">
+                        <span>About</span>
+                        <svg :class="{'rotate-180': mobileSubmenuOpen === 'about'}"
+                            class="w-4 h-4 transition-transform duration-300" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+
+                    <!-- Mobile About Submenu -->
+                    <div x-show="mobileSubmenuOpen === 'about'" x-transition:enter="transition ease-out duration-200"
+                        x-transition:enter-start="opacity-0 transform scale-95"
+                        x-transition:enter-end="opacity-100 transform scale-100"
+                        x-transition:leave="transition ease-in duration-150"
+                        x-transition:leave-start="opacity-100 transform scale-100"
+                        x-transition:leave-end="opacity-0 transform scale-95" class="ml-4 mt-1 mb-2 space-y-1"
+                        style="display: none;">
+                        <a href="/page/about-us.html"
+                            class="block px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 text-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-building text-indigo-500 mr-2"></i>
+                                <span>About Company</span>
+                            </div>
+                        </a>
+                        <a href="/page/careers.html"
+                            class="block px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 text-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-briefcase text-indigo-500 mr-2"></i>
+                                <span>Careers</span>
+                            </div>
+                        </a>
+                        <a href="/page/contact.html"
+                            class="block px-3 py-2 rounded-md text-gray-700 hover:bg-indigo-50 hover:text-indigo-600 text-sm">
+                            <div class="flex items-center">
+                                <i class="fas fa-phone text-indigo-500 mr-2"></i>
+                                <span>Contact Us</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile Get Started Button -->
+                <div class="mt-4 px-3">
+                    <a href="/page/inquiry.html"
+                        class="block text-center px-6 py-3 text-white font-medium bg-gradient-to-r from-indigo-600 to-purple-600 rounded-full hover:shadow-lg transition duration-300 transform hover:scale-105">
+                        <span>Ask for a Quote</span>
+                        <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+<main>
+ <!-- Hero Section -->
+ <section class="relative overflow-hidden grid-pattern min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 lg:px-8 py-20 bg-white">
+    <!-- Animated Background Blobs -->
+    <div class="absolute top-0 right-0 w-96 h-96 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-violet-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+    <div class="absolute top-1/2 left-1/4 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+    
+    <!-- Floating particles -->
+    <div id="particles-container" class="absolute inset-0 z-0"></div>
+    
+    <div class="relative max-w-7xl mx-auto text-center z-10 mt-20">
+      <div class="mb-8 flex justify-center">
+        <div class="relative inline-flex items-center px-4 py-2 rounded-full bg-indigo-100/80 backdrop-blur-sm text-indigo-700 text-sm font-medium">
+          <span class="animate-ping absolute inline-flex h-3 w-3 rounded-full bg-indigo-500 opacity-75 mr-3"></span>
+          <span class="relative inline-flex rounded-full h-3 w-3 bg-indigo-600 mr-3"></span>
+         Social Media Marketing
+        </div>
+      </div>
+      
+      <h1 class="text-4xl md:text-6xl font-bold font-alt mb-6 opacity-0" id="hero-title">
+        <span class="text-gradient">Where Strategy Meets Impact</span>
+      </h1>
+      <p class="text-xl md:text-2xl max-w-4xl mx-auto mb-10 text-slate-600 opacity-0" id="hero-text">
+        We offer creative strategies that drive engagement, grow your audience, increase your sales, and convert followers into customers.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row justify-center gap-4 mb-12 opacity-0" id="hero-buttons">
+        <a href="#services" class="bg-gradient-to-r from-indigo-600 to-violet-600 text-white font-semibold py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 focus:ring-2 focus:ring-violet-500 focus:ring-offset-2">
+          Explore Our Services
+        </a>
+        <a href="#pricing" class="bg-white text-indigo-600 border-2 border-indigo-600 font-semibold py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:bg-indigo-50 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+          View Pricing
+        </a>
+      </div>
+      
+      <div class="relative mt-12 opacity-0" id="hero-image">
+        <img src="/assets/images/social-mediahero.png" alt="Social Media Marketing Dashboard" class="rounded-xl shadow-2xl mx-auto max-w-full pulse-glow" />
+        
+        <!-- Decorative elements -->
+        <div class="absolute -top-6 -right-6 bg-violet-600 text-white text-sm font-bold py-2 px-4 rounded-full transform rotate-12 shadow-lg opacity-90 backdrop-blur-sm hidden md:block">
+          Cutting-edge solutions
+        </div>
+        <div class="absolute -bottom-4 -left-4 bg-indigo-600 text-white text-sm font-bold py-2 px-4 rounded-full transform -rotate-6 shadow-lg opacity-90 backdrop-blur-sm hidden md:block">
+          with a futuristic approach
+        </div>
+        
+        <!-- Decorative tech lines -->
+        <svg class="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-1/2 hidden lg:block" width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M100 0V200" stroke="rgba(79, 70, 229, 0.2)" stroke-width="1" />
+          <path d="M0 100H200" stroke="rgba(79, 70, 229, 0.2)" stroke-width="1" />
+          <circle cx="100" cy="100" r="50" stroke="rgba(79, 70, 229, 0.3)" stroke-width="1" fill="none" />
+          <circle cx="100" cy="100" r="75" stroke="rgba(79, 70, 229, 0.2)" stroke-width="1" fill="none" />
+          <circle cx="100" cy="100" r="100" stroke="rgba(79, 70, 229, 0.1)" stroke-width="1" fill="none" />
+        </svg>
+        
+        <svg class="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-1/2 hidden lg:block" width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M100 0V200" stroke="rgba(124, 58, 237, 0.2)" stroke-width="1" />
+          <path d="M0 100H200" stroke="rgba(124, 58, 237, 0.2)" stroke-width="1" />
+          <circle cx="100" cy="100" r="50" stroke="rgba(124, 58, 237, 0.3)" stroke-width="1" fill="none" />
+          <circle cx="100" cy="100" r="75" stroke="rgba(124, 58, 237, 0.2)" stroke-width="1" fill="none" />
+          <circle cx="100" cy="100" r="100" stroke="rgba(124, 58, 237, 0.1)" stroke-width="1" fill="none" />
+        </svg>
+      </div>
+      
+      <div class="flex justify-center mt-12 space-x-2">
+        <div class="w-3 h-3 rounded-full bg-indigo-500"></div>
+        <div class="w-3 h-3 rounded-full bg-indigo-300"></div>
+        <div class="w-3 h-3 rounded-full bg-indigo-300"></div>
+      </div>
+    </div>
+    
+    <div class="absolute bottom-5 left-0 right-0 flex justify-center animate-bounce" id="scroll-indicator">
+      <a href="#services" class="text-indigo-600 flex flex-col items-center group">
+        <span class="block mb-1 group-hover:text-indigo-800 transition-colors">Scroll Down</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 group-hover:text-indigo-800 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+        </svg>
+      </a>
+    </div>
+  </section>
+
+ <!-- Services Strategy Section -->
+ <section id="services" class="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-gradient-to-tr from-indigo-800 to-violet-600 ">
+    <div class="absolute inset-0 z-0">
+      <div class="absolute top-1/2 left-1/4 w-64 h-64 bg-indigo-500/20 rounded-full mix-blend-multiply filter blur-2xl"></div>
+      <div class="absolute bottom-1/4 right-1/3 w-64 h-64 bg-violet-500/20 rounded-full mix-blend-multiply filter blur-2xl"></div>
+    </div>
+    
+    <div class="max-w-7xl mx-auto relative z-10">
+      <div class="text-center mb-16 services-header">
+        <h2 class="text-3xl md:text-5xl font-bold font-alt mb-6">
+          <span class="bg-clip-text text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-violet-500">Social Media Marketing Strategy</span>
+        </h2>
+        <p class="text-lg md:text-xl max-w-3xl mx-auto text-slate-300">
+          Our data-driven approach creates custom strategies that resonate with your audience and deliver measurable results.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 services-cards">
+        <!-- Service 1 -->
+        <div class="bg-transparent backdrop-blur-md border border-white/40 p-8 rounded-xl border border-slate-700 shadow-xl hover:shadow-indigo-500/20 transition-all duration-500 group hover:-translate-y-2">
+          <div class="bg-indigo-900/50 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-400 group-hover:text-indigo-300 transition-colors" viewBox="0 0 20 20" fill="currentColor">
+              <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-4 font-alt text-white">Audience Growth & Engagement</h3>
+          <p class="text-slate-300 mb-6">
+            Expand your social presence with targeted audience growth strategies and engagement tactics that build meaningful connections.
+          </p>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span class="text-slate-300">Targeted follower acquisition</span>
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span class="text-slate-300">Community building strategies</span>
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span class="text-slate-300">Engagement-focused content</span>
+            </li>
+          </ul>
+          <div class="h-1 w-0 bg-gradient-to-r from-indigo-500 to-violet-500 group-hover:w-full transition-all duration-700"></div>
+        </div>
+        
+        <!-- Service 2 -->
+        <div class="bg-transparent backdrop-blur-md border border-white/40 p-8 rounded-xl border border-slate-700 shadow-xl hover:shadow-violet-500/20 transition-all duration-500 group hover:-translate-y-2">
+          <div class="bg-violet-900/50 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-violet-400 group-hover:text-violet-300 transition-colors" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 005 10a6 6 0 0012 0c0-.352-.02-.696-.066-1.028A4.96 4.96 0 0012 11c-1.11 0-2.08-.402-2.599-1M8 20h3a1 1 0 001-1v-1H7v1a1 1 0 001 1z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-4 font-alt text-white">Content Creation & Curation</h3>
+          <p class="text-slate-300 mb-6">
+            Captivate your audience with visually stunning, strategically crafted content that reflects your brand's unique voice.
+          </p>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span class="text-slate-300">Professional graphic design</span>
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span class="text-slate-300">Sales revenue increases</span>
+            </li> 
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span class="text-slate-300">Trend-responsive content calendar</span>
+            </li>
+          </ul>
+          <div class="h-1 w-0 bg-gradient-to-r from-violet-500 to-purple-500 group-hover:w-full transition-all duration-700"></div>
+        </div>
+        
+        <!-- Service 3 -->
+        <div class="bg-transparent backdrop-blur-md border border-white/40 p-8 rounded-xl border border-slate-700 shadow-xl hover:shadow-indigo-500/20 transition-all duration-500 group hover:-translate-y-2">
+          <div class="bg-indigo-900/50 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-indigo-400 group-hover:text-indigo-300 transition-colors" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-4 font-alt text-white">Analytics & Performance Optimization</h3>
+          <p class="text-slate-300 mb-6">
+            Data-driven insights that track performance metrics and optimize your social media strategy for maximum ROI.
+          </p>
+          <ul class="space-y-2 mb-6">
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span class="text-slate-300">Comprehensive performance reports</span>
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span class="text-slate-300">Conversion tracking</span>
+            </li>
+            <li class="flex items-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+              </svg>
+              <span class="text-slate-300">Strategy refinement</span>
+            </li>
+          </ul>
+          <div class="h-1 w-0 bg-gradient-to-r from-indigo-500 to-violet-500 group-hover:w-full transition-all duration-700"></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="py-20 px-4 sm:px-6 lg:px-8 bg-slate-100 relative overflow-hidden dark:bg-gradient-to-tr from-indigo-800 to-violet-900 dark:text:white text-lg">
+    <div class="absolute top-0 right-0 w-64 h-64 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+    <div class="absolute bottom-0 left-0 w-64 h-64 bg-violet-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+    
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold font-alt mb-4 reveal">
+          <span class="text-white">Pricing Packages</span>
+        </h2>
+        <p class="text-lg md:text-xl max-w-3xl mx-auto text-slate-100 reveal">
+        We have <strong> flexible pricing</strong> options designed to meet your business needs, whether you're just starting out or ready to scale your social media presence.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Basic Package -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden reveal">
+          <div class="p-8">
+            <h3 class="text-2xl font-bold mb-4 font-alt">Startup</h3>
+            <div class="flex items-baseline mb-4">
+              <span class="text-4xl font-bold">399</span>
+              <span class="text-slate-500 ml-2">/month</span>
+            </div>
+            <p class="text-slate-600 mb-6">
+              Perfect for small businesses and startups looking to establish their social media presence.
+            </p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>2 social media platforms</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>12 posts per month</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>5 flyer design per month</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>Basic content creation</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>Monthly performance report</span>
+              </li>
+            </ul>
+          </div>
+          <div class="p-8 pt-0">
+            <a href="mailto:info@blacklemur.co.za">
+            <button class="w-full py-3 px-4 border border-indigo-600 text-indigo-600 font-semibold rounded-lg hover:bg-indigo-50 transition-colors duration-300">
+              Select Plan
+            </button>
+        </a>
+          </div>
+        </div>
+        
+        <!-- Standard Package -->
+        <div class="bg-white rounded-2xl shadow-xl transform md:-translate-y-6 relative reveal">
+          <div class="absolute -top-5 inset-x-0 flex justify-center">
+            <span class="bg-green-600 text-white text-sm font-semibold py-2 px-4 rounded-full">Most Popular</span>
+          </div>
+          <div class="p-8 pt-12">
+            <h3 class="text-2xl font-bold mb-4 font-alt">Growth</h3>
+            <div class="flex items-baseline mb-4">
+              <span class="text-4xl font-bold">$899</span>
+              <span class="text-slate-500 ml-2">/month</span>
+            </div>
+            <p class="text-slate-600 mb-6">
+              Ideal for growing businesses looking to expand their social media impact and engagement.
+            </p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>3 social media platforms</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>16 posts per month</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>10 flyer designs per month</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>Advanced content creation</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>Bi-weekly performance reports</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>•	Comment & inbox response (basic)</span>
+              </li>
+            </ul>
+          </div>
+          <div class="p-8 pt-0">
+            <a href="mailto:info@blacklemur.co.za">
+            <button class="w-full py-3 px-4 gradient-bg text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 glow">
+              Select Plan
+            </button>
+        </a>
+          </div>
+        </div>
+        
+        <!-- Premium Package -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden reveal">
+          <div class="p-8">
+            <h3 class="text-2xl font-bold mb-4 font-alt">Enterprise</h3>
+            <div class="flex items-baseline mb-4">
+              <span class="text-4xl font-bold">$1,599</span>
+              <span class="text-slate-500 ml-2">/month</span>
+            </div>
+            <p class="text-slate-600 mb-6">
+              Comprehensive solution for established businesses seeking maximum social media impact.
+            </p>
+            <ul class="space-y-3 mb-8">
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>6 social media platforms</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>30 posts per month</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>Premium content creation</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>Weekly performance reports</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>24/7 community management</span>
+              </li>
+              <li class="flex items-start">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500 mr-2 mt-0.5" viewBox="0 0 20 20" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                <span>Ad campaign management</span>
+              </li>
+            </ul>
+          </div>
+          <div class="p-8 pt-0">
+            <a href="mailto:info@blacklemur.co.za">
+            <button class="w-full py-3 px-4 border border-indigo-600 text-indigo-600 font-semibold rounded-lg hover:bg-indigo-50 transition-colors duration-300">
+              Select Plan
+            </button>
+        </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="mt-16 bg-white p-8 rounded-xl shadow-lg text-center reveal">
+        <h3 class="text-xl font-bold mb-4 font-alt">Need a custom solution?</h3>
+        <p class="text-slate-600 mb-6">
+          We offer tailored packages designed specifically for your business needs and goals.
+        </p>
+        <a href="tel:2776126569" class="inline-flex items-center px-6 py-3 border border-indigo-600 text-indigo-600 font-semibold rounded-md hover:bg-indigo-50 transition-colors duration-300">
+      Call Us for Custom Pricing
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Approach Section -->
+  <section id="approach" class="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-slate-100">
+    <div class="absolute top-1/3 right-1/4 w-64 h-64 bg-violet-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+    <div class="absolute bottom-1/3 left-1/3 w-64 h-64 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10"></div>
+    
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold font-alt mb-4 reveal">
+          <span class="gradient-text">Our Approach</span>
+        </h2>
+        <p class="text-lg md:text-xl max-w-3xl mx-auto text-slate-600 reveal">
+          We combine creativity, data-driven strategies, and cutting-edge techniques to deliver exceptional results for our clients.
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div class="order-2 md:order-1">
+          <div class="space-y-8 reveal">
+            <div class="flex">
+              <div class="flex-shrink-0">
+                <div class="flex items-center justify-center h-12 w-12 rounded-md gradient-bg text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="ml-4">
+                <h3 class="text-xl font-bold mb-2 font-alt">Discovery & Strategy</h3>
+                <p class="text-slate-600">
+                  We begin by understanding your business, audience, and goals to develop a customized social media strategy that aligns with your objectives.
+                </p>
+              </div>
+            </div>
+            
+            <div class="flex">
+              <div class="flex-shrink-0">
+                <div class="flex items-center justify-center h-12 w-12 rounded-md gradient-bg text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                  </svg>
+                </div>
+              </div>
+              <div class="ml-4">
+                <h3 class="text-xl font-bold mb-2 font-alt">Content Creation & Curation</h3>
+                <p class="text-slate-600">
+                  Our creative team crafts visually stunning, engaging content that resonates with your audience and reinforces your brand identity.
+                </p>
+              </div>
+            </div>
+            
+            <div class="flex">
+              <div class="flex-shrink-0">
+                <div class="flex items-center justify-center h-12 w-12 rounded-md gradient-bg text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="ml-4">
+                <h3 class="text-xl font-bold mb-2 font-alt">Community Management</h3>
+                <p class="text-slate-600">
+                  We nurture relationships with your audience through active engagement, prompt responses, and community-building initiatives.
+                </p>
+              </div>
+            </div>
+            
+            <div class="flex">
+              <div class="flex-shrink-0">
+                <div class="flex items-center justify-center h-12 w-12 rounded-md gradient-bg text-white">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                  </svg>
+                </div>
+              </div>
+              <div class="ml-4">
+                <h3 class="text-xl font-bold mb-2 font-alt">Analysis & Optimization</h3>
+                <p class="text-slate-600">
+                  We continuously monitor performance, analyze data, and refine strategies to ensure you achieve maximum ROI from your social media investment.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="order-1 md:order-2 reveal">
+          <img src="/Assets/images/smapproach.png" alt="Our Approach" class="mx-auto rounded-xl shadow-xl float-animation" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8 gradient-bg text-white relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-0 left-0 w-full h-full grid grid-cols-6 grid-rows-6">
+        <div class="col-span-1 row-span-1 bg-white opacity-5"></div>
+        <div class="col-span-1 row-span-1 bg-white opacity-5"></div>
+        <div class="col-span-1 row-span-1 bg-white opacity-5"></div>
+        <div class="col-span-1 row-span-1 bg-white opacity-5"></div>
+        <div class="col-span-1 row-span-1 bg-white opacity-5"></div>
+        <div class="col-span-1 row-span-1 bg-white opacity-5"></div>
+      </div>
+    </div>
+    
+    <div class="max-w-6xl mx-auto text-center relative z-10">
+      <h2 class="text-3xl md:text-4xl font-bold font-alt mb-6 reveal">Are you ready to transform your social media presence?</h2>
+      <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto opacity-90 reveal">
+        Let's create a social media strategy that drives real results for your business.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row justify-center gap-6 mb-10 reveal">
+        <a href="mailto:info@blacklemur.co.za" class="flex items-center justify-center bg-white text-indigo-600 px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          info@blacklemur.co.za
+        </a>
+        <a href="https://wa.me/27761265694" class="flex items-center justify-center bg-green-500 text-white px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+          </svg>
+          WhatsApp: +27 76 126 5694
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+    <!-- JavaScript -->
+    <script>
+// JavaScript for animations
+document.addEventListener('DOMContentLoaded', function() {
+  // Add keyframes animation
+  const style = document.createElement('style');
+  style.textContent = `
+    @keyframes fade-in {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    
+    .animate-fade-in {
+      animation: fade-in 0.8s ease forwards;
+    }
+    
+    @keyframes floating {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+    
+    .floating {
+      animation: floating 3s ease-in-out infinite;
+    }
+    
+    .service-icon-container:hover svg {
+      transform: scale(1.2) rotate(10deg);
+      transition: transform 0.3s ease;
+    }
+  `;
+  document.head.appendChild(style);
+  
+  // Initialize animations
+  createParticles();
+  animateHeroSection();
+  animateServiceIcons();
+  animateFeatureText();
+  animateGrid();
+  typeEffect();
+  
+  // Check reveal elements on scroll
+  window.addEventListener('scroll', revealElements);
+  revealElements(); // Initial check
+  
+  // Add interactive 3D tilt effect to cards
+  addCardTiltEffect();
+  
+  // Scroll indicator interaction
+  setupScrollIndicator();
+});
+
+// Particles animation for hero section
+function createParticles() {
+  const particlesContainer = document.getElementById('particles-container');
+  if (!particlesContainer) return;
+  
+  const particleCount = window.innerWidth < 768 ? 20 : 50;
+  
+  for (let i = 0; i < particleCount; i++) {
+    const particle = document.createElement('div');
+    const size = Math.random() * 3 + 1;
+    
+    particle.style.position = 'absolute';
+    particle.style.width = `${size}px`;
+    particle.style.height = `${size}px`;
+    particle.style.backgroundColor = Math.random() > 0.5 ? 'rgba(79, 70, 229, 0.5)' : 'rgba(124, 58, 237, 0.5)';
+    particle.style.borderRadius = '50%';
+    particle.style.left = `${Math.random() * 100}%`;
+    particle.style.top = `${Math.random() * 100}%`;
+    particle.style.boxShadow = `0 0 ${size * 2}px rgba(124, 58, 237, 0.8)`;
+    
+    particlesContainer.appendChild(particle);
+    
+    // Animate particles
+    animateParticle(particle);
+  }
+}
+
+function animateParticle(particle) {
+  const duration = Math.random() * 30000 + 10000;
+  const startX = parseFloat(particle.style.left);
+  const startY = parseFloat(particle.style.top);
+  const endX = Math.random() * 100;
+  const endY = Math.random() * 100;
+  const startTime = Date.now();
+  
+  function update() {
+    const elapsed = Date.now() - startTime;
+    const progress = elapsed / duration;
+    
+    if (progress < 1) {
+      const currentX = startX + (endX - startX) * progress;
+      const currentY = startY + (endY - startY) * progress;
+      
+      particle.style.left = `${currentX}%`;
+      particle.style.top = `${currentY}%`;
+      
+      requestAnimationFrame(update);
+    } else {
+      // Reset animation
+      particle.style.left = `${Math.random() * 100}%`;
+      particle.style.top = `${Math.random() * 100}%`;
+      animateParticle(particle);
+    }
+  }
+  
+  requestAnimationFrame(update);
+}
+
+// Reveal animation on scroll
+function revealElements() {
+  const reveals = document.querySelectorAll('.reveal');
+  
+  for (let i = 0; i < reveals.length; i++) {
+    const windowHeight = window.innerHeight;
+    const elementTop = reveals[i].getBoundingClientRect().top;
+    const elementVisible = 150;
+    const delay = reveals[i].dataset.delay || 0;
+    
+    if (elementTop < windowHeight - elementVisible) {
+      setTimeout(() => {
+        reveals[i].classList.add('opacity-100', 'translate-y-0');
+        reveals[i].classList.remove('opacity-0', 'translate-y-8');
+      }, delay);
+    }
+  }
+  
+  // Hero image animation
+  const heroImage = document.getElementById('hero-image');
+  if (heroImage) {
+    const heroImageTop = heroImage.getBoundingClientRect().top;
+    if (heroImageTop < window.innerHeight - 150) {
+      setTimeout(() => {
+        heroImage.classList.add('opacity-100', 'animate-fade-in', 'floating');
+      }, 1200);
+    }
+  }
+}
+
+// Hero section animation
+function animateHeroSection() {
+  const heroTitle = document.getElementById('hero-title');
+  const heroText = document.getElementById('hero-text');
+  const heroButtons = document.getElementById('hero-buttons');
+  
+  if (heroTitle) {
+    setTimeout(() => {
+      heroTitle.classList.add('opacity-100', 'animate-fade-in');
+    }, 300);
+  }
+  
+  if (heroText) {
+    setTimeout(() => {
+      heroText.classList.add('opacity-100', 'animate-fade-in');
+    }, 600);
+  }
+  
+  if (heroButtons) {
+    setTimeout(() => {
+      heroButtons.classList.add('opacity-100', 'animate-fade-in');
+    }, 900);
+  }
+}
+
+// Service icon animation
+function animateServiceIcons() {
+  const serviceContainers = document.querySelectorAll('.service-icon-container');
+  
+  serviceContainers.forEach(container => {
+    container.addEventListener('mouseenter', () => {
+      const icon = container.querySelector('svg');
+      if (icon) {
+        icon.classList.add('transform', 'scale-125', 'rotate-12');
+      }
+    });
+    
+    container.addEventListener('mouseleave', () => {
+      const icon = container.querySelector('svg');
+      if (icon) {
+        icon.classList.remove('transform', 'scale-125', 'rotate-12');
+      }
+    });
+  });
+}
+
+// Feature text animation
+function animateFeatureText() {
+  const features = document.querySelectorAll('.feature-text');
+  
+  features.forEach(feature => {
+    feature.addEventListener('mouseenter', () => {
+      feature.classList.add('text-indigo-600', 'font-medium');
+    });
+    
+    feature.addEventListener('mouseleave', () => {
+      feature.classList.remove('text-indigo-600', 'font-medium');
+    });
+  });
+}
+
+// Typed text effect for gradient heading
+function typeEffect() {
+  const gradientTexts = document.querySelectorAll('.text-gradient');
+  
+  gradientTexts.forEach(text => {
+    const originalText = text.textContent;
+    text.textContent = '';
+    
+    let charIndex = 0;
+    const typeInterval = setInterval(() => {
+      if (charIndex < originalText.length) {
+        text.textContent += originalText.charAt(charIndex);
+        charIndex++;
+      } else {
+        clearInterval(typeInterval);
+      }
+    }, 50);
+  });
+}
+
+// Add grid animation
+function animateGrid() {
+  const gridPattern = document.querySelector('.grid-pattern');
+  if (!gridPattern) return;
+  
+  let offset = 0;
+  
+  function updatePattern() {
+    offset +=.2;
+    gridPattern.style.backgroundPosition = `${offset}px ${offset}px`;
+    requestAnimationFrame(updatePattern);
+  }
+  
+  requestAnimationFrame(updatePattern);
+}
+
+// Add interactive 3D tilt effect to cards
+function addCardTiltEffect() {
+  const cards = document.querySelectorAll('.service-card');
+  
+  cards.forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      
+      const xc = rect.width / 2;
+      const yc = rect.height / 2;
+      
+      const dx = x - xc;
+      const dy = y - yc;
+      
+      const tiltX = dy / 20;
+      const tiltY = -dx / 20;
+      
+      card.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) translateY(-5px)`;
+    });
+    
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0)';
+      card.style.transition = 'transform 0.5s ease';
+    });
+  });
+}
+
+// Scroll indicator interaction
+function setupScrollIndicator() {
+  const scrollIndicator = document.getElementById('scroll-indicator');
+  if (!scrollIndicator) return;
+  
+  scrollIndicator.addEventListener('click', e => {
+    e.preventDefault();
+    const servicesSection = document.getElementById('services');
+    if (servicesSection) {
+      servicesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+}
+
+  // Animation on scroll
+  function reveal() {
+      const reveals = document.querySelectorAll('.reveal');
+      
+      for (let i = 0; i < reveals.length; i++) {
+        const windowHeight = window.innerHeight;
+        const elementTop = reveals[i].getBoundingClientRect().top;
+        const elementVisible = 150;
+        
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add('active');
+        }
+      }
+    }
+    
+    window.addEventListener('scroll', reveal);
+    reveal(); // To check the initial state
+    
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+    
+    // Initialize GSAP animations
+    if (typeof gsap !== 'undefined') {
+      gsap.registerPlugin(ScrollTrigger);
+      
+
+      // Pricing cards animations
+      gsap.utils.toArray('#pricing .reveal').forEach((card, i) => {
+        gsap.from(card, {
+          scrollTrigger: {
+            trigger: card,
+            start: 'top 80%',
+          },
+          y: 50,
+          opacity: 0,
+          duration: 0.6,
+          delay: i * 0.2
+        });
+      });
+    }
+    
+    // Blob animation
+    const blob = document.querySelector('.animate-blob');
+    if (blob) {
+      setInterval(() => {
+        blob.style.transform = `translate(${Math.random() * 10 - 5}px, ${Math.random() * 10 - 5}px) scale(${Math.random() * 0.1 + 0.95})`;
+      }, 500);
+    }
+
+
+      </script>
+</main>
+
+<!-- Footer -->
+<footer class="pattern-bg text-white py-16 montserrat relative overflow-hidden">
+    <!-- Animated background elements -->
+    <div class="absolute inset-0 overflow-hidden opacity-10 pointer-events-none">
+        <div id="particles" class="w-full h-full absolute"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <!-- Newsletter Section -->
+        <div data-aos="fade-up"
+            class="mb-16 bg-gradient-to-r from-gray-800 to-gray-900 rounded-2xl p-8 shadow-2xl border border-gray-700 transform transition-all hover:shadow-indigo-500/20">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="md:w-1/2">
+                    <h3
+                        class="montserrat-alternates text-2xl md:text-3xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-500">
+                        Join Our Newsletter
+                    </h3>
+                    <p class="text-gray-300 mb-4">
+                        Stay updated with our latest insights, news, and creative solutions.
+                    </p>
+                </div>
+                <div class="md:w-1/2 w-full">
+                    <form id="newsletter-form" class="flex flex-col sm:flex-row gap-3">
+                        <input type="email" placeholder="Enter your email"
+                            class="flex-grow px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition-all"
+                            required>
+                        <button type="submit"
+                            class="px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-lg font-medium hover:from-indigo-500 hover:to-purple-500 transition-all transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-lg">
+                            Subscribe
+                        </button>
+                    </form>
+                    <p id="newsletter-message" class="mt-2 text-sm"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Footer Content -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-14">
+
+            <!-- Services Column -->
+            <div data-aos="fade-up" data-aos-delay="200">
+                <h3 class="montserrat-alternates text-2xl font-bold mb-6 flex items-center">
+                    Our Services
+                </h3>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 w-full">
+                    <!-- Social Media Services -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4 text-indigo-400">Social Media</h4>
+                        <ul class="space-y-3 text-gray-400">
+                            <li class="service-item light-trail">
+                                <a href="/services/content-creation" class="hover:text-white block py-1">Content
+                                    Creation</a>
+                            </li>
+                            <li class="service-item light-trail">
+                                <a href="/services/graphic-design" class="hover:text-white block py-1">Graphic
+                                    Design</a>
+                            </li>
+                            <li class="service-item light-trail">
+                                <a href="/services/social-strategy" class="hover:text-white block py-1">Social
+                                    Strategy</a>
+                            </li>
+                            <li class="service-item light-trail">
+                                <a href="/services/community" class="hover:text-white block py-1">Community
+                                    Management</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Digital Marketing Services -->
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4 text-purple-400">Digital Marketing</h4>
+                        <ul class="space-y-3 text-gray-400">
+                            <li class="service-item light-trail">
+                                <a href="/services/web-development" class="hover:text-white block py-1">Web
+                                    Development</a>
+                            </li>
+                            <li class="service-item light-trail">
+                                <a href="/services/seo" class="hover:text-white block py-1">SEO Services</a>
+                            </li>
+                            <li class="service-item light-trail">
+                                <a href="/services/google-ads" class="hover:text-white block py-1">Google Ads</a>
+                            </li>
+                            <li class="service-item light-trail">
+                                <a href="/services/email-marketing" class="hover:text-white block py-1">Email
+                                    Marketing</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Data Solutions Services -->
+                <div class="mt-8">
+                    <h4 class="text-lg font-semibold mb-4 text-purple-400">Data Solutions</h4>
+                    <ul class="space-y-3 text-gray-400 grid grid-cols-1 sm:grid-cols-2 gap-2">
+                        <li class="service-item light-trail">
+                            <a href="/services/data-analytics" class="hover:text-white block py-1">Data Analytics</a>
+                        </li>
+                        <li class="service-item light-trail">
+                            <a href="/services/data-management" class="hover:text-white block py-1">Data Management</a>
+                        </li>
+                        <li class="service-item light-trail">
+                            <a href="/services/predictive-insights" class="hover:text-white block py-1">Market
+                                Insights</a>
+                        </li>
+                        <li class="service-item light-trail">
+                            <a href="/services/data-security" class="hover:text-white block py-1">Data Security</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Company Column -->
+            <div data-aos="fade-up" data-aos-delay="300">
+                <h3 class="montserrat-alternates text-2xl font-bold mb-6 flex items-center">
+                    Quick Links
+                </h3>
+                <ul class="space-y-4 text-gray-400">
+                    <li class="service-item transform transition-all hover:translate-x-2">
+                        <a href="/page/about us.html" class="hover:text-white flex items-center">
+                            <i class="fas fa-chevron-right text-xs mr-2 text-indigo-400"></i>
+                            About Us
+                        </a>
+                    </li>
+                    <li class="service-item transform transition-all hover:translate-x-2">
+                        <a href="/page/portfolio.html" class="hover:text-white flex items-center">
+                            <i class="fas fa-chevron-right text-xs mr-2 text-indigo-400"></i>
+                            Our Work
+                        </a>
+                    </li>
+                    <li class="service-item transform transition-all hover:translate-x-2">
+                        <a href="/page/team.html" class="hover:text-white flex items-center">
+                            <i class="fas fa-chevron-right text-xs mr-2 text-indigo-400"></i>
+                            Our Team
+                        </a>
+                    </li>
+                    <li class="service-item transform transition-all hover:translate-x-2">
+                        <a href="/page/blog.html" class="hover:text-white flex items-center">
+                            <i class="fas fa-chevron-right text-xs mr-2 text-indigo-400"></i>
+                            Blog
+                        </a>
+                    </li>
+                    <li class="service-item transform transition-all hover:translate-x-2">
+                        <a href="mailto:careers@blacklemur.co.zw" class="hover:text-white flex items-center">
+                            <i class="fas fa-chevron-right text-xs mr-2 text-indigo-400"></i>
+                            Careers
+                        </a>
+                    </li>
+                    <li class="service-item transform transition-all hover:translate-x-2">
+                        <a href="/page/contact.html" class="hover:text-white flex items-center">
+                            <i class="fas fa-chevron-right text-xs mr-2 text-indigo-400"></i>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Contact & Social Column -->
+            <div data-aos="fade-left" data-aos-delay="400">
+                <h3 class="montserrat-alternates text-2xl font-bold mb-6 flex items-center">
+                    Connect With Us
+                </h3>
+
+                <!-- Service Request -->
+                <div class="mb-10">
+                    <h4 class="text-lg font-semibold mb-4 text-gray-200">What services are you looking for?</h4>
+                    <div id="service-selector" class="flex flex-wrap gap-3 mb-6">
+                        <button
+                            class="service-btn px-3 py-1.5 bg-white/10 rounded-full text-sm hover:bg-indigo-600 transition-colors"
+                            data-service="Social Media">Social Media</button>
+                        <button
+                            class="service-btn px-3 py-1.5 bg-white/10 rounded-full text-sm hover:bg-indigo-600 transition-colors"
+                            data-service="Website">Website</button>
+                        <button
+                            class="service-btn px-3 py-1.5 bg-white/10 rounded-full text-sm hover:bg-indigo-600 transition-colors"
+                            data-service="Email">Email</button>
+                        <button
+                            class="service-btn px-3 py-1.5 bg-white/10 rounded-full text-sm hover:bg-indigo-600 transition-colors"
+                            data-service="Google Ads">Google Ads</button>
+                        <button
+                            class="service-btn px-3 py-1.5 bg-white/10 rounded-full text-sm hover:bg-indigo-600 transition-colors"
+                            data-service="SEO">SEO</button>
+                        <button
+                            class="service-btn px-3 py-1.5 bg-white/10 rounded-full text-sm hover:bg-indigo-600 transition-colors"
+                            data-service="Data">Data</button>
+                    </div>
+                    <a href="mailto:info@blaclemur.co.za">
+                        <button id="request-service"
+                            class="w-full py-3 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-lg font-medium hover:from-indigo-500 hover:to-purple-500 transition-all transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed">
+                            Request Service
+                        </button>
+                    </a>
+                </div>
+
+                <!-- Social Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-5 text-gray-200">Follow Us</h4>
+                    <div class="flex flex-wrap gap-5">
+                        <a href="https://web.facebook.com/blacklemurinnovation"
+                            class="social-icon w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-800 rounded-full flex items-center justify-center hover:scale-110 transition-transform shadow-lg"
+                            aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com/blacklemurs1"
+                            class="social-icon w-12 h-12 bg-gradient-to-br from-gray-700 to-gray-900 rounded-full flex items-center justify-center hover:scale-110 transition-transform shadow-lg"
+                            aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/theblproject"
+                            class="social-icon w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-700 rounded-full flex items-center justify-center hover:scale-110 transition-transform shadow-lg"
+                            aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://za.linkedin.com/company/blacklemurinnovations"
+                            class="social-icon w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center hover:scale-110 transition-transform shadow-lg"
+                            aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@blacklemur"
+                            class="social-icon w-12 h-12 bg-gradient-to-br from-black to-gray-800 rounded-full flex items-center justify-center hover:scale-110 transition-transform shadow-lg"
+                            aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/blacklemur"
+                            class="social-icon w-12 h-12 bg-gradient-to-br from-red-600 to-red-800 rounded-full flex items-center justify-center hover:scale-110 transition-transform shadow-lg"
+                            aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Extended Services Section -->
+        <div data-aos="fade-up" data-aos-delay="100" class="mt-16 pt-12 border-t border-gray-800">
+            <details class="group cursor-pointer">
+                <summary
+                    class="flex items-center justify-between text-xl font-semibold mb-6 text-gray-300 outline-none">
+                    <span>View All Services</span>
+                    <span class="transform group-open:rotate-180 transition-transform">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </span>
+                </summary>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 py-4">
+                    <div class="service-category">
+                        <h4 class="text-indigo-400 font-semibold mb-3">Marketing</h4>
+                        <ul class="space-y-2 text-gray-400">
+                            <li class="service-item"><a href="#" class="hover:text-white">Social Media Marketing</a>
+                            </li>
+                            <li class="service-item"><a href="#" class="hover:text-white">Google Ads</a></li>
+                            <li class="service-item"><a href="#" class="hover:text-white">Email Nurturing</a></li>
+                            <li class="service-item"><a href="#" class="hover:text-white">SEO</a></li>
+                        </ul>
+                    </div>
+                    <div class="service-category">
+                        <h4 class="text-indigo-400 font-semibold mb-3">Web Services</h4>
+                        <ul class="space-y-2 text-gray-400">
+                            <li class="service-item"><a href="#" class="hover:text-white">Website Design</a></li>
+                            <li class="service-item"><a href="#" class="hover:text-white">E-commerce Development</a>
+                            </li>
+                            <li class="service-item"><a href="#" class="hover:text-white">Web Applications</a></li>
+                            <li class="service-item"><a href="#" class="hover:text-white">Website Maintenance</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="service-category">
+                        <h4 class="text-indigo-400 font-semibold mb-3">Content Creation</h4>
+                        <ul class="space-y-2 text-gray-400">
+                            <li class="service-item"><a href="#" class="hover:text-white">Blog Writing</a></li>
+                            <li class="service-item"><a href="#" class="hover:text-white">Graphic Design</a></li>
+                            <li class="service-item"><a href="#" class="hover:text-white">Video Production</a></li>
+                            <li class="service-item"><a href="#" class="hover:text-white">Photography</a></li>
+                        </ul>
+                    </div>
+                    <div class="service-category">
+                        <h4 class="text-indigo-400 font-semibold mb-3">Business Services</h4>
+                        <ul class="space-y-2 text-gray-400">
+                            <li class="service-item"><a href="#" class="hover:text-white">Bookkeeping &
+                                    Accounting</a></li>
+                            <li class="service-item"><a href="#" class="hover:text-white">Customer Support</a></li>
+                            <li class="service-item"><a href="#" class="hover:text-white">Research & Market
+                                    Analysis</a></li>
+                            <li class="service-item"><a href="#" class="hover:text-white">Data Management</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </details>
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400">&copy; 2025 Blacklemur Innovations. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0 text-sm text-gray-500">
+                    <a href="/page/privacy.html" class="hover:text-gray-300 transition-colors">Privacy Policy</a>
+                    <a href="/page/terms.html" class="hover:text-gray-300 transition-colors">Terms of Service</a>
+                    <a href="/page/cookies.html" class="hover:text-gray-300 transition-colors">Cookie Policy</a>
+                </div>
+            </div>
+
+            <!-- Back to top button -->
+            <button id="back-to-top"
+                class="fixed bottom-8 right-8 bg-indigo-600 text-white w-10 h-10 rounded-full flex items-center justify-center shadow-lg transform transition-transform hover:scale-110 opacity-100 invisible">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</footer>
+<!-- Script Section -->
+<script src="/navbar.js"></script>
+<script src="/main.js">  </script>
+
+</body>
+</html>
